@@ -1,10 +1,25 @@
 ---
-
+import SVGLoader from "../assets/SvgLoader.astro";
 ---
 
 
-<header>
-    
+<header class="sticky flex py-10 px-6 items-center">
+    <div class="flex items-center justify-around">
+        <div class="text-ng-primary max-w-1/3 min-w-[300px] w-full">
+            <SVGLoader icon="logo2"/>
+        </div>
+        <nav class="list-none flex gap-2 justify-end">
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>Q&A</li>
+            <li>CONTACT</li>
+        </nav>
+    </div>
+    <div class="flex-1 flex justify-end">
+        <button type="button" class="border py-2 px-4 border-ng-primary hover:bg-ng-primary transition-colors">BOOK ONLINE</button>
+    </div>
+
+
 </header>
 
 
