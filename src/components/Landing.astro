@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import Profile from "../../public/carissa.jpg"
+---
+
+<section id="#home">
+    <div class="flex center-div pt-20">
+        <div class="flex justify-center items-center gap-10 lg:flex-row flex-col">
+            <div class="flex justify-start items-start h-full">
+                <Image src={Profile} alt="Carissa Ng" class="aspect-[2/3] object-cover w-full min-w-[250px] max-w-[800px] lg:max-h-max max-h-[600px]"/>
+            </div>
+            <div class="flex flex-col gap-4 px-16">
+                <h3 class="text-ng-text-content text-md font-[300] leading-8 lg:text-left text-center">WELCOME TO CARISSA NG COUNSELLING SERVICES</h3>
+                <h1 class="text-5xl lora font-regular tracking-wider text-ng-text-content pb-6 lg:text-left text-center">HI! MY NAME IS CARISSA.</h1>
+                <p class="text-ng-text-content text-md font-[300] leading-8">
+                    I believe that every human deserves to have their story seen, heard, and understood. This can be especially important in our busy world where it can be difficult to take the time to slow down and truly listen. 
+                </p>
+                <p class="text-ng-text-content text-md font-[300] leading-8">
+                    Life can be complex and unpredictable, so I care about providing an inclusive, safe, empathetic, and nonjudgmental space where you can feel comfortable sharing your journey with me. I believe that you are the expert of your own life, and it would be my deepest privilege to walk alongside you while we work together to overcome obstacles and navigate where you would like to go next.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
