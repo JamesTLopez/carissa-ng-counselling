@@ -3,6 +3,10 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(to bottom, #8c947d 0%, #8c947d 100%)",
+      },
       colors: {
         "ng-primary-darker": "#717D73",
         "ng-primary": "#8c947d",
