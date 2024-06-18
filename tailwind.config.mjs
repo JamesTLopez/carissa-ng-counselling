@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        "ng-primary-darker": "#717D73",
         "ng-primary": "#8c947d",
         "ng-primary-content": "#2d2c2a",
         "ng-text-content": "#333338",
