@@ -5,7 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         "custom-gradient":
-          "linear-gradient(to bottom, #8c947d 0%, #8c947d 100%)",
+          "linear-gradient(to bottom, #8c947d 30%, rgba(140, 148, 125, 0.8) 100%)",
       },
       colors: {
         "ng-primary-darker": "#7E876E",

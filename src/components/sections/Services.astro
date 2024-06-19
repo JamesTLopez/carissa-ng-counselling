@@ -1,23 +1,38 @@
 ---
 import ServiceFormatCard from "../ServiceFormatCard.astro";
 
-import {sessionFormats} from  "../../assets"
+import {sessionFormats,specialties,supportAreas} from  "../../assets"
 ---
 
-<section id="services" class="bg-custom-gradient min-h-[70vh]">
-    <div class="center-div py-32 flex flex-col gap-10">
-        <div class="flex justify-center items-center gap-10 flex-col">
-            <div class="flex flex-col pb-20">
-                <h1 class="text-5xl lora font-regular tracking-wide pb-6 lg:text-left text-center text-ng-secondary">Therapy Services.</h1>
-                <h3 class="text-center text-ng-secondary">See services below for online and in-person</h3>
-            </div>
+<section id="services" class="bg-custom-gradient">
+    <div class="center-div py-32 flex flex-col">
+        <!-- TITLE -->
+        <div class="flex flex-col pb-20">
+            <h1 class="text-5xl montserrat font-semibold tracking-wider pb-6 text-ng-secondary-content text-center">Therapy Services.</h1>
+            <h3 class="text-center text-ng-secondary-content">See services below for online and in-person</h3>
+        </div>
+        <!-- CONTENT SERVICES -->
+        <div class="flex justify-center items-center gap-20 flex-col w-full">
             <div class="flex md:flex-row flex-col gap-10 justify-around items-center w-4/5">
                 {sessionFormats.map(item => <ServiceFormatCard {...item}/>)}
             </div>
+            <div>
+            <div class="flex flex-col gap-8 p-10 w-full mt-20">
+                <h1 class="text-start text-ng-secondary-content montserrat font-semibold text-3xl tracking-wider">Specialties.</h1>
+                <div class="flex flex-wrap gap-4">
+                    {specialties.map(item =>{ 
+                        return <div class="text-ng-secondary-content lora text-lg border py-2 px-6 rounded-3xl">{item}</div>
+                    })}
+                </div>
+            </div>
+            <div class="flex flex-col gap-8 p-10 w-full mt-20">
+                <h1 class="text-start text-ng-secondary-content montserrat font-semibold text-3xl tracking-wider">Other areas of support.</h1>
+                <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 flex-wrap">
+                    {supportAreas.map(item =>{ 
+                        return <div class="text-ng-secondary-content lora text-lg py-2 text-ellipsis min-w-[260px]">+ {item}</div>
+                    })}
+                </div>
+            </div>
         </div>
-        <!-- <div class="bg-ng-primary-darker h-20">
-
         </div>
-        <h3 class="text-start text-ng-secondary text-2xl tracking-wider">AREAS OF THERAPEUTIC SUPPORT</h3> -->
-    </div>
 </section>
