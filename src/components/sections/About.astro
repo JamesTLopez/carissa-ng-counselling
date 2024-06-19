@@ -4,10 +4,11 @@ import { Image } from "astro:assets";
 import Profile from "../../../public/carissa.jpg";
 import ExperienceCard from "../ExperienceCard.astro";
 import { education, experience, certifications } from "../../assets";
+import SvgLoader from "../../assets/SvgLoader.astro";
 ---
 
 <section id="about">
-  <div class="flex center-div py-32 min-h-screen">
+  <div class="flex flex-col center-div py-32 min-h-screen">
     <div class="flex flex-col w-full gap-4">
       <div class="border-b-2 border-ng-primary-darker pb-4">
         <h2
@@ -69,6 +70,23 @@ import { education, experience, certifications } from "../../assets";
           />
         </div>
       </div>
+    </div>
+    <div class="flex justify-center items-center pt-64">
+        <div class="bg-ng-secondary-content p-10 md:w-3/5 w-full flex flex-col items-center rounded-md gap-4">
+          <div class="flex flex-col justify-center items-center gap-2 border-b  w-full border-ng-primary-darker pb-4">
+            <div class="text-ng-primary-darker w-[40px]">
+              <SvgLoader icon="heart"/>
+            </div>
+            <h1 class="lora text-2xl tracking-wider text-ng-primary-darker">MY APPROACH</h1>
+            
+          </div>
+          <div class="flex flex-col justify-center items-center w-full border-ng-primary-darker gap-4">
+            <p class="text-ng-text-content text-md font-[300] leading-8">Nulla facilisi. Curabitur id pharetra dui, et feugiat quam. Nullam facilisis dui nunc, ut pulvinar quam euismod quis. Sed eu purus nec sapien vehicula dictum. In feugiat urna non mi tristique egestas tincidunt et massa. Aliquam nec dignissim magna. Aenean nec dui in dui ullamcorper pellentesque vitae sed leo. Ut finibus et ante sit amet consequat. Phasellus scelerisque maximus eros in ullamcorper. Phasellus posuere posuere purus at imperdiet. Fusce mollis metus nec nisl vulputate, vitae dignissim nibh ultricies. Curabitur vitae sem porttitor, venenatis mi ac, dapibus enim. Donec ultricies ultricies justo non ullamcorper. </p>
+            <p class="text-ng-text-content text-md font-[300] leading-8">Nulla facilisi. Curabitur id pharetra dui, et feugiat quam. Nullam facilisis dui nunc, ut pulvinar quam euismod quis. Sed eu purus nec sapien vehicula dictum. In feugiat urna non mi tristique egestas tincidunt et massa. Aliquam nec dignissim magna. Aenean nec dui in dui ullamcorper pellentesque vitae sed leo. Ut finibus et ante sit amet consequat. Phasellus scelerisque maximus eros in ullamcorper. Phasellus posuere posuere purus at imperdiet. Fusce mollis metus nec nisl vulputate, vitae dignissim nibh ultricies. Curabitur vitae sem porttitor, venenatis mi ac, dapibus enim. Donec ultricies ultricies justo non ullamcorper. </p>
+
+          </div>
+
+        </div>
     </div>
   </div>
 </section>
