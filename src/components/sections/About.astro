@@ -1,11 +1,105 @@
 ---
-import SkillsSection from "./SkillsSection.astro";
-
-
+import SkillsCard from "../SkillsCard.astro";
+import { Image } from "astro:assets";
+import Profile from "../../../public/carissa.jpg";
+import ExperienceCard from "../ExperienceCard.astro";
+import { education, experience, certifications } from "../../assets";
 ---
 
 <section id="about">
-    <div class="flex center-div py-32 min-h-screen">
-            <SkillsSection/>
+  <div class="flex center-div py-32 min-h-screen">
+    <div class="flex flex-col w-full gap-4">
+      <div class="border-b-2 border-ng-primary-darker pb-4">
+        <h2
+          class="lora text-5xl font-semibold text-ng-primary-darker tracking-[0.5rem]"
+        >
+          About Me.
+        </h2>
+      </div>
+      <div class="content-area">
+        <div class="flex flex-col w-full gap-4">
+          <p class="text-ng-text-content text-md font-[300] leading-8">
+            I care about engaging in self-reflection and am passionate about
+            cultivating deep and intimate relationships. My drive and motivation
+            comes from my family and friends, I enjoy rock climbing, playing
+            board games, and reading fiction novels, and am happiest when I’m
+            sharing a meal with a loved one.
+          </p>
+          <p class="text-ng-text-content text-md font-[300] leading-8">
+            I am a Registered Psychotherapist and a graduate of Trinity Western
+            University, where I earned my Master’s degree in Counselling
+            Psychology. Over the past three years, I have worked at various
+            community agencies, assessing and supporting clients with
+            depression, anxiety, trauma experiences, chronic pain, identity
+            issues, academic concerns, and relationship concerns.
+          </p>
+          <div class="personal-skills">
+            <div
+              class="flex lg:justify-start justify-center items-start h-full w-full"
+            >
+              <Image
+                src={Profile}
+                alt="Carissa Ng"
+                class="aspect-square object-contain w-1/2"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col w-full gap-4">
+          <ExperienceCard index={0} title={"Education"} traits={education} />
+          <ExperienceCard
+            index={1}
+            title={"Professional Experience"}
+            traits={experience}
+          />
+          <SkillsCard
+            index={2}
+            title={"Certifications and Skills "}
+            desc={"With my education and professtional experiences, I am confident in:"}
+            traits={[
+              "Depression",
+              "Anxiety",
+              "Trauma",
+              "Chronic pain",
+              "Identity issues",
+              "Academic concerns",
+              "Relationship concerns",
+            ]}
+            certifications={certifications}
+          />
+        </div>
+      </div>
     </div>
+  </div>
 </section>
+
+<style>
+  @media only screen and (max-width: 1000px) {
+    .personal-skills .skill img {
+      aspect-ratio: 1;
+      object-fit: contain;
+      width: 50%;
+      max-width: 175px;
+    }
+    .content-area {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
+
+  @media only screen and (min-width: 999px) {
+    .personal-skills .skill img {
+      aspect-ratio: 1;
+      object-fit: contain;
+      width: 80%;
+      max-width: clamp(3rem, 10vw, 7em);
+    }
+    .content-area {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 1rem;
+      width: 100%;
+    }
+  }
+</style>

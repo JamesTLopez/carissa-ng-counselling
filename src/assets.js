@@ -76,3 +76,47 @@ export const supportAreas = [
   "School Challenges",
   "Self-Esteem/Self-Worth",
 ];
+
+export const education = [
+  {
+    year: "2020 - 2023",
+    title: "MASTER OF ARTS: COUNSELLING PSYCHOLOGY",
+    location: "Trinity Western University | Langley, BC",
+  },
+  {
+    year: "2019 - 2020",
+    title: "ONTARIO GRADUATE CERTIFICATE: ADDICTIONS AND MENTAL HEALTH",
+    location: "Humber College | Toronto, ON",
+  },
+  {
+    year: "2014 - 2018",
+    title: "BACHELOR OF SCIENCE: PSYCHOLOGY MAJOR, BIOLOGY MINOR",
+    location: "University of Waterloo | Waterloo, ON",
+  },
+];
+
+export const experience = [
+  {
+    year: "2020 - Present",
+    title: "WELLNESS SPECIALIST",
+    location: "Concentrix | Mississauga, ON",
+  },
+  {
+    year: "2019 - 2020",
+    title: "REGISTERED PSYCHOTHERAPIST",
+    location: "Healing Roots Therapy | Mississauga, ON",
+  },
+];
+
+export const certifications = [
+  {
+    year: "2021",
+    title: "Centering Black Youth Wellbeing: Combatting Anti-Black Racism",
+    location: "Mississauga, ON",
+  },
+  {
+    year: "2019 - 2020",
+    title: "Applied Suicide Intervention Skills Training (ASIST)",
+    location: "Mississauga, ON",
+  },
+];
