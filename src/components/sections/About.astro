@@ -18,7 +18,7 @@ import { education, experience, certifications } from "../../assets";
       </div>
       <div class="content-area">
         <div class="flex flex-col w-full gap-4">
-          <p class="text-ng-text-content text-md font-[300] leading-8">
+          <p class="text-ng-text-content text-md font-[300] poppins-italic leading-8">
             I care about engaging in self-reflection and am passionate about
             cultivating deep and intimate relationships. My drive and motivation
             comes from my family and friends, I enjoy rock climbing, playing
@@ -33,14 +33,14 @@ import { education, experience, certifications } from "../../assets";
             depression, anxiety, trauma experiences, chronic pain, identity
             issues, academic concerns, and relationship concerns.
           </p>
-          <div class="personal-skills">
+          <div class="personal-skills flex-1 flex justify-center items-start">
             <div
-              class="flex lg:justify-start justify-center items-start h-full w-full"
+              class="flex lg:justify-start justify-center items-around h-full w-full min-w-[350px]"
             >
               <Image
                 src={Profile}
                 alt="Carissa Ng"
-                class="aspect-square object-contain w-1/2"
+                class="aspect-square object-contain w-2/3 max-w-[500px]"
               />
             </div>
           </div>
@@ -75,12 +75,11 @@ import { education, experience, certifications } from "../../assets";
 
 <style>
   @media only screen and (max-width: 1000px) {
-    .personal-skills .skill img {
+    /* .personal-skills .skill img {
       aspect-ratio: 1;
       object-fit: contain;
       width: 50%;
-      max-width: 175px;
-    }
+    } */
     .content-area {
       display: flex;
       flex-direction: column;
@@ -89,12 +88,12 @@ import { education, experience, certifications } from "../../assets";
   }
 
   @media only screen and (min-width: 999px) {
-    .personal-skills .skill img {
+    /* .personal-skills .skill img {
       aspect-ratio: 1;
       object-fit: contain;
       width: 80%;
       max-width: clamp(3rem, 10vw, 7em);
-    }
+    } */
     .content-area {
       display: grid;
       grid-template-columns: 55% 45%;
