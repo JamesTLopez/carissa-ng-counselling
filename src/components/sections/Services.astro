@@ -1,0 +1,19 @@
+---
+import ServiceFormatCard from "../ServiceFormatCard.astro";
+
+import {sessionFormats} from  "../../assets"
+---
+
+<section id="#services" class="bg-custom-gradient min-h-[70vh]">
+    <div class="center-div py-32">
+        <div class="flex justify-center items-center gap-10 flex-col">
+            <div class="flex flex-col">
+                <h1 class="text-5xl lora font-regular tracking-wide text-ng-text-content pb-6 lg:text-left text-center">Therapy Services</h1>
+                <h3 class="text-center">See services below for online and in-person</h3>
+            </div>
+            <div class="flex md:flex-row flex-col gap-10 justify-around w-4/5">
+                {sessionFormats.map(item => <ServiceFormatCard {...item}/>)}
+            </div>
+        </div>
+    </div>
+</section>
