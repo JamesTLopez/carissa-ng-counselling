@@ -4,12 +4,12 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 
 
-<header class="sticky top-0 py-4 w-full bg-white">
+<header class="sticky top-0 py-4 w-full bg-white z-20 shadow-lg">
     <div class="center-div w-full flex items-center">
         <div class="flex items-center w-3/4">
-            <div class="text-ng-primary max-w-[250px] min-w-[190px] aspect-auto w-[30%]">
+            <a href="#home" class="text-ng-primary max-w-[225px] min-w-[190px] aspect-auto w-[20%]">
                 <SVGLoader icon="logo"/>
-            </div>
+            </a>
             <nav class="list-none md:flex text-md font-[500] gap-4 mx-auto hidden tracking-widest text-ng-primary">
                 <HeaderLink link="#services" label="SERVICES"/>
                 <HeaderLink link="#about" label="ABOUT"/>
