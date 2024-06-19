@@ -8,7 +8,7 @@ export default {
           "linear-gradient(to bottom, #8c947d 0%, #8c947d 100%)",
       },
       colors: {
-        "ng-primary-darker": "#717D73",
+        "ng-primary-darker": "#7E876E",
         "ng-primary": "#8c947d",
         "ng-primary-content": "#2d2c2a",
         "ng-text-content": "#333338",

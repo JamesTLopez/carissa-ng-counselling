@@ -17,14 +17,14 @@ export const sessionFormats = [
     img: "https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: "$120 + HST",
     description:
-      "I want you to feel acknowledged, understood, and supported. </br>You deserve a safe space to navigate and process life's challenges.",
+      "I want you to feel acknowledged, understood, and supported. You deserve a safe space to navigate and process life's challenges.",
   },
   {
     title: "Online Therapy",
     img: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: "$120 + HST",
     description:
-      "I want you to feel acknowledged, understood, and supported. </br>You deserve a safe space to navigate and process life's challenges.",
+      "I want you to feel acknowledged, understood, and supported. You deserve a safe space to navigate and process life's challenges.",
   },
 ];
 
