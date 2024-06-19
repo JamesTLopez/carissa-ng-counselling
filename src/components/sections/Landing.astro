@@ -1,10 +1,11 @@
 ---
 import { Image } from 'astro:assets';
 import Profile from "../../../public/carissa.jpg"
+import SvgLoader from '../../assets/SvgLoader.astro';
 ---
 
-<section id="home">
-    <div class="flex center-div py-32 min-h-[800px]">
+<section id="home" class="relative">
+    <div class=" flex center-div py-32 min-h-[800px]">
         <div class="flex justify-center lg:items-start items-center gap-10 lg:flex-row flex-col">
             <div class="flex lg:justify-start justify-center items-start h-full w-full">
                 <Image src={Profile} alt="Carissa Ng" class="aspect-[2/3] sm:w-full object-cover min-w-[300px] max-w-[400px] lg:max-h-max max-h-[600px]"/>
@@ -25,5 +26,8 @@ import Profile from "../../../public/carissa.jpg"
                 </div>
             </div>
         </div>
+        <!-- <div class="absolute bottom-0 left-0 right-0 w-full">
+            <SvgLoader icon="poo"/>
+        </div> -->
     </div>
 </section>
