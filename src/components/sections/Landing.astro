@@ -11,11 +11,28 @@ import SvgLoader from '../../assets/SvgLoader.astro';
 
 <section id="home" class="relative">
     <div class=" flex center-div py-32 min-h-[800px]">
-        <div class="flex justify-center lg:items-start items-center gap-10 lg:flex-row flex-col">
-            <div class="flex lg:justify-start justify-center items-start h-full w-full">
-                <Image src={Profile} alt="Carissa Ng" class="aspect-[2/3] sm:w-full object-cover min-w-[300px] max-w-[400px] lg:max-h-max max-h-[600px]"/>
+        <div class="flex justify-center lg:items-start items-center gap-10 lg:flex-row flex-col z-20">
+            <!-- image container -->
+            <div class="relative flex lg:justify-start justify-center items-start aspect-square  min-w-[300px] max-w-[400px] lg:max-h-max max-h-[600px]">
+                <Image src={Profile} alt="Carissa Ng" class="h-full sm:w-full object-cover z-20"/>
+                <div  class="absolute w-full h-full bg-red-200 opacity-10 z-10">
+                    <div id="l1" class="absolute -top-[12rem] -left-[10rem] w-3/4 -rotate-[35deg]">
+                        <SvgLoader icon="grass"/>
+                    </div>
+                    <div id="l2" class="absolute -bottom-[12rem] -left-[10rem] w-3/4 -rotate-[135deg]">
+                        <SvgLoader icon="grass"/>
+                    </div>
+                    <div id="l3" class="absolute -top-[12rem] -right-[10rem] w-3/4 rotate-[35deg]">
+                        <SvgLoader icon="grass"/>
+                    </div>
+                    <div id="l4" class="absolute -bottom-[12rem] -right-[8rem] w-3/5 rotate-[150deg]">
+                        <SvgLoader icon="grass"/>
+                    </div>
+                 
+                </div>
             </div>
-            <div class="flex flex-col gap-4 sm:pl-16 px-0 h-full">
+
+            <div class="flex flex-col gap-4 sm:pl-16 px-0 h-full relative">
                 <h3 class="text-ng-text-content tracking-wider text-md font-[300] leading-8 lg:text-left text-center">WELCOME TO CARISSA NG COUNSELLING SERVICES</h3>
                 <h1 class="text-5xl lora font-regular tracking-wide text-ng-text-content pb-6 lg:text-left text-center">HI! MY NAME IS CARISSA.</h1>
                 <p class="text-ng-text-content text-md font-[300] leading-8">
@@ -29,10 +46,10 @@ import SvgLoader from '../../assets/SvgLoader.astro';
                         MORE ABOUT ME
                     </a>
                 </div>
+            
             </div>
         </div>
-        <!-- <div id="heart" class="absolute bottom-0 left-0 right-0 w-full">
-            <SvgLoader icon="poo"/>
-        </div> -->
+
+
     </div>
 </section>
