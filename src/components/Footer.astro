@@ -1,0 +1,33 @@
+---
+import SVGLoader from "../assets/SvgLoader.astro";
+import HeaderLink from "./HeaderLink.astro";
+---
+
+
+<footer class="bg-ng-primary min-h-[500px] flex flex-col">
+    <div class="center-div w-full h-full flex flex-col flex-1 lg:py-20 py-12">
+        <div class="flex flex-col h-full flex-1">
+            <div class="flex-1 flex justify-between border-b-2 pb-10">
+                <div class="flex flex-col justify-around items-start flex-1 ">
+                    <ul class="text-ng-secondary-content flex flex-col gap-2">
+                        <HeaderLink link="#home" label="+ HOME"/>
+                        <HeaderLink link="#services" label="+ SERVICES"/>
+                        <HeaderLink link="#about" label="+ ABOUT"/>
+                        <HeaderLink link="#questions" label="+ Q&A"/>
+                        <HeaderLink link="#contact" label="+ CONTACT"/>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-around items-center flex-1 ">
+                    <div class="w-1/2 max-w-[235px] min-w-[175px]">
+                        <SVGLoader icon="carissalogo"/>
+                    </div>                
+                </div>
+                <div class="flex flex-col justify-around items-end flex-1"></div>
+            </div>
+            <div class="flex flex-col items-center text-ng-secondary-content pt-10">
+                <h2 class="text-xs">COPYRIGHT © 2024 CARISSA NG COUNSELLING.</h2>
+                <h2 class="text-xs">Website by James Lopez</h2>
+            </div>
+        </div>
+    </div>
+</footer>

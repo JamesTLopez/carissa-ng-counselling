@@ -6,6 +6,8 @@ export default {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(to bottom, #8c947d 30%, rgba(140, 148, 125, 0.8) 100%)",
+        "footer-gradient":
+          "linear-gradient(to bottom, white 0%, rgba(140, 148, 125, 0.8) 100%)",
       },
       colors: {
         "ng-primary-darker": "#7E876E",
