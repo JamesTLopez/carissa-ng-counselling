@@ -1,18 +1,16 @@
 ---
-import SkillsCard from "../SkillsCard.astro";
 import { Image } from "astro:assets";
 import Profile from "../../../public/carissa.jpg";
-import ExperienceCard from "../ExperienceCard.astro";
 import {  certifications } from "../../assets";
 import SvgLoader from "../../assets/SvgLoader.astro";
 ---
 
 <section id="about">
-  <div class="flex flex-col center-div py-32 min-h-screen">
+  <div class="flex flex-col center-div py-32">
     <div class="flex flex-col w-full gap-4">
       <div class="border-b-2 border-ng-primary-darker pb-4">
         <h2
-          class="lora text-5xl font-semibold text-ng-primary-darker tracking-[0.5rem]"
+          class="lora text-5xl font-semibold text-ng-primary-darker tracking-wider"
         >
           About Me.
         </h2>
@@ -28,7 +26,7 @@ import SvgLoader from "../../assets/SvgLoader.astro";
           </p>
 
           <div class="flex-1 flex flex-col items-center pt-10">
-            <h1 class="flex lora tracking-[0.2rem] text-2xl font-semibold text-ng-primary-darker pb-4">Education and Experience</h1>
+            <h1 class="flex lora tracking-widest text-2xl font-semibold text-ng-primary-darker pb-4">Education and Experience</h1>
             <p class="text-ng-text-content text-md font-[300] leading-8">
               I am a Registered Psychotherapist and a graduate of Trinity Western
               University, where I earned my Master’s degree in Counselling
@@ -38,11 +36,11 @@ import SvgLoader from "../../assets/SvgLoader.astro";
               issues, academic concerns, and relationship concerns.
             </p>
             <div class="pt-8 w-full">
-              <h1 class="lora text-xl font-semibold text-ng-primary-darker pb-4 text-center">Additional training and Certifications:</h1>
+              <h1 class="lora text-lg font-semibold text-ng-primary-darker pb-4 text-center tracking-wider">Additional training and Certifications:</h1>
               <div class="flex flex-col">
                 {certifications.map(item => {
                   return (
-                    <div class="text-medium text-ng-text-content font-[300] text-center">+ {item.title}</div>
+                    <div class="text-ng-text-content text-center font-[300] leading-8">+ {item.title}</div>
                   )
                 })}
               </div>
@@ -51,7 +49,7 @@ import SvgLoader from "../../assets/SvgLoader.astro";
         </div>
         <div class="flex flex-col w-full gap-4  items-center lg:items-end">
           <div
-          class="flex lg:justify-end justify-center items-center h-full lg:w-full w-2/3 max-w-[600px]"
+          class="flex lg:justify-end justify-center items-center h-full lg:w-full w-2/3 max-w-[600px] pl-6"
         >
           <Image
             src={Profile}
