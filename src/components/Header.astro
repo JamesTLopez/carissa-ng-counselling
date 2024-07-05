@@ -6,22 +6,23 @@ import HeaderLink from "./HeaderLink.astro";
 
 <header class="sticky top-0 py-4 w-full bg-white z-50 shadow-lg">
     <div class="center-div w-full flex items-center">
-        <div class="flex items-center w-3/4">
+        <div class="flex flex-1 items-center">
             <a href="#home" class="text-ng-primary max-w-[225px] min-w-[190px] aspect-auto w-[20%]">
                 <SVGLoader icon="header-logo"/>
             </a>
-            <nav class="text-md font-[500] mx-auto tracking-widest text-ng-primary">
-                <ul class="list-none md:flex hidden gap-4">
-                    <HeaderLink link="#home" label="HOME"/>
-                    <HeaderLink link="#services" label="SERVICES"/>
-                    <HeaderLink link="#about" label="ABOUT"/>
-                    <!-- <HeaderLink link="#questions" label="Q&A"/> -->
-                    <HeaderLink link="#contact" label="CONTACT"/>
-                </ul>
-
-            </nav>
+     
         </div>
-        <div class="w-1/4 flex justify-end">
+        <nav class="flex-1 flex items-center justify-center text-md font-[500] mx-auto tracking-widest text-ng-primary">
+            <ul class="list-none md:flex hidden gap-6">
+                <HeaderLink link="#home" label="HOME"/>
+                <HeaderLink link="#services" label="SERVICES"/>
+                <HeaderLink link="#about" label="ABOUT"/>
+                <!-- <HeaderLink link="#questions" label="Q&A"/> -->
+                <HeaderLink link="#contact" label="CONTACT"/>
+            </ul>
+
+        </nav>
+        <div class="flex-1 flex justify-end">
             <button type="button" class="w-[170px] border py-2 px-4 font-[500] tracking-widest text-ng-primary border-ng-primary text-nowrap hover:bg-ng-primary hover:text-white transition-colors">
                 BOOK ONLINE
             </button>
