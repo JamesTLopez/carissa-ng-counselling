@@ -9,11 +9,12 @@ const { title,img,price,description } = Astro.props;
     <div class="flex justify-center items-center">                
         <Image class='rounded-full aspect-square' width={360} height={360} alt={title} src={img} />
     </div>
-    <div class="flex flex-col gap-4 text-ng-secondary-content">
+    <div class="flex flex-col text-ng-secondary-content">
         <div class="flex items-center">
             <h1 class="flex-1 text-xl montserrat font-semibold tracking-wide">{title}</h1>
             <p>{price}</p>
         </div>
-        <p class="text-opacity-50">{description}</p>
+        {!price  ? <p class="text-sm italic">Please contact me for more information</p>:null}
+        <p class="text-opacity-50 pt-4">{description}</p>
     </div>
 </div>
