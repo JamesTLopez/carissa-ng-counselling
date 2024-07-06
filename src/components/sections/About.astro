@@ -1,95 +1,110 @@
 ---
 import { Image } from "astro:assets";
 import Profile from "../../assets/carissa.jpg";
-import {  certifications } from "../../assets";
-import SvgLoader from "../../assets/SvgLoader.astro";
+import { certifications } from "../../assets";
 ---
 
-<section id="about">
-  <div class="flex flex-col center-div py-32">
-    <div class="flex flex-col w-full gap-4">
-      <div class="pb-20">
-        <h2
-          class="lora text-5xl font-semibold text-ng-primary-darker tracking-wider"
-        >
-        About<span class="italic"> Me. </span>
-        </h2>
-      </div>
-      <div class="content-area">
-        <div class="flex flex-col w-full gap-6">
-   
-          <div class="flex-1 flex flex-col items-start pt-10">
-            <h1 class="flex lora tracking-widest text-2xl font-semibold text-ng-primary-darker pb-4">Education and Experience</h1>
-            <p class="text-ng-text-content text-md font-[300] leading-8">
-              I am a Registered Psychotherapist and a graduate of Trinity Western
-              University, where I earned my Master’s degree in Counselling
-              Psychology. Over the past three years, I have worked at various
-              community agencies, assessing and supporting clients with
-              depression, anxiety, trauma experiences, chronic pain, identity
-              issues, academic concerns, and relationship concerns.
-            </p>
-            <div class="pt-8 w-full">
-              <h1 class="lora text-lg font-semibold text-ng-primary-darker pb-4 text-left tracking-wider">Additional raining and Certifications</h1>
-              <div class="flex flex-col">
-                {certifications.map(item => {
-                  return (
-                    <div class="text-ng-text-content text-left font-[300] leading-8">- {item.title}</div>
-                  )
-                })}
+<>
+  <section id="about">
+    <div class="flex flex-col center-div py-32">
+      <div class="flex flex-col w-full gap-4">
+        <div class="pb-20">
+          <h2
+            class="lora text-5xl text-ng-primary-darker tracking-wider"
+          >
+            About<span class="italic"> Me. </span>
+          </h2>
+        </div>
+        <div class="content-area">
+          <div class="flex flex-col w-full gap-6">
+            <div class="flex-1 flex flex-col items-start pt-10">
+              <h1
+                class="flex lora tracking-widest text-2xl font-semibold text-ng-primary-darker pb-4"
+              >
+                Education and Experience
+              </h1>
+              <p class="text-ng-text-content text-md font-[300] leading-8">
+                I am a Registered Psychotherapist and a graduate of Trinity
+                Western University, where I earned my Master’s degree in
+                Counselling Psychology. Over the past three years, I have worked
+                at various community agencies, assessing and supporting clients
+                with depression, anxiety, trauma experiences, chronic pain,
+                identity issues, academic concerns, and relationship concerns.
+              </p>
+              <div class="pt-8 w-full">
+                <h1
+                  class="lora text-2xl font-semibold text-ng-primary-darker pb-4 text-left tracking-wider"
+                >
+                  Additional Training and Certifications
+                </h1>
+                <div class="flex flex-col">
+                  {
+                    certifications.map((item) => {
+                      return (
+                        <div class="text-ng-text-content text-left font-[300] leading-8">
+                          - {item.title}
+                        </div>
+                      );
+                    })
+                  }
+                </div>
               </div>
+              <p
+                class="pt-8 text-ng-text-content text-md font-[300] poppins-italic leading-8"
+              >
+                I believe that every human deserves to have their story seen,
+                heard, and understood. This can be especially important in our
+                busy world where it can be difficult to take the time to slow
+                down and truly listen.
+              </p>
             </div>
-            <p class="pt-8 text-ng-text-content text-md font-[300] poppins-italic leading-8">
-              I believe that every human deserves to have their story seen, heard, and understood. This can be especially important in our busy world where it can be difficult to take the time to slow down and truly listen. 
-            </p>
           </div>
-        </div>
-        <div class="flex flex-col w-full gap-4  items-center lg:items-end">
-          <div
-          class="flex lg:justify-end justify-center items-center h-full lg:w-full w-2/3 max-w-[600px] pl-6"
-        >
-          <Image
-            src={Profile}
-            alt="Carissa Ng"
-            class="aspect-square object-contain "
-          />
-        </div>
+          <div class="flex flex-col w-full gap-4 items-center lg:items-end">
+            <div
+              class="flex lg:justify-end justify-center items-center h-full lg:w-full w-2/3 max-w-[600px] pl-6"
+            >
+              <Image
+                src={Profile}
+                alt="Carissa Ng"
+                class="aspect-square object-contain"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="flex justify-center items-center flex-col lg:flex-row gap-32 pt-36">
-      <div class="bg-ng-secondary-content p-10 lg:w-3/5 w-full flex flex-col items-center rounded-md gap-4">
-        <div class="flex flex-col justify-center items-center gap-2 border-b  w-full border-ng-primary-darker pb-4">
-          <div class="text-ng-primary-darker w-[40px]">
-            <SvgLoader icon="heart"/>
+  </section>
+  <section id="about-2" class="relative bg-ng-secondary-content h-full">
+    <div class="flex flex-col center-div py-32 h-full items-center justify-center ">
+      <div class="flex flex-col lg:flex-row justify-around h-full max-w-[1500px]">
+        <div class="flex flex-col justify-around w-full flex-1">
+          <div class="flex flex-col gap-8">
+            <h1
+            class="lora text-5xl text-ng-primary-darker tracking-wider"
+          >
+            My <span class="italic">Approach</span>
+          </h1>
+          <ul class="text-ng-primary-darker tracking-wider">
+            <li>RELATION</li>
+            <li>WARM</li>
+            <li>SYSTEMS-ORIENTED</li>
+          </ul>
           </div>
-          <h1 class="lora text-2xl tracking-wider text-ng-primary-darker">MY APPROACH</h1>
-          
         </div>
-        <div class="flex flex-col justify-center items-center w-full border-ng-primary-darker gap-4">
-          <p class="text-ng-text-content text-md font-[300] leading-8">Nulla facilisi. Curabitur id pharetra dui, et feugiat quam. Nullam facilisis dui nunc, ut pulvinar quam euismod quis. Sed eu purus nec sapien vehicula dictum. In feugiat urna non mi tristique egestas tincidunt et massa. Aliquam nec dignissim magna. Aenean nec dui in dui ullamcorper pellentesque vitae sed leo. Ut finibus et ante sit amet consequat. Phasellus scelerisque maximus eros in ullamcorper. Phasellus posuere posuere purus at imperdiet. Fusce mollis metus nec nisl vulputate, vitae dignissim nibh ultricies. Curabitur vitae sem porttitor, venenatis mi ac, dapibus enim. Donec ultricies ultricies justo non ullamcorper. </p>
-          <p class="text-ng-text-content text-md font-[300] leading-8">Nulla facilisi. Curabitur id pharetra dui, et feugiat quam. Nullam facilisis dui nunc, ut pulvinar quam euismod quis. Sed eu purus nec sapien vehicula dictum. In feugiat urna non mi tristique egestas tincidunt et massa. Aliquam nec dignissim magna. Aenean nec dui in dui ullamcorper pellentesque vitae sed leo. Ut finibus et ante sit amet consequat. Phasellus scelerisque maximus eros in ullamcorper. Phasellus posuere posuere purus at imperdiet. Fusce mollis metus nec nisl vulputate, vitae dignissim nibh ultricies. Curabitur vitae sem porttitor, venenatis mi ac, dapibus enim. Donec ultricies ultricies justo non ullamcorper. </p>
-        </div>
-      </div>
-      <div class="bg-ng-secondary-content p-10 lg:w-3/5 w-full flex flex-col items-center rounded-md gap-4">
-        <div class="flex flex-col justify-center items-center gap-2 border-b  w-full border-ng-primary-darker pb-4">
-          <div class="text-ng-primary-darker w-[40px]">
-            <SvgLoader icon="heart"/>
-          </div>
-          <h1 class="lora text-2xl tracking-wider text-ng-primary-darker">MY APPROACH</h1>
-          
-        </div>
-        <div class="flex flex-col justify-center items-center w-full border-ng-primary-darker gap-4">
-          <p class="text-ng-text-content text-md font-[300] leading-8">Nulla facilisi. Curabitur id pharetra dui, et feugiat quam. Nullam facilisis dui nunc, ut pulvinar quam euismod quis. Sed eu purus nec sapien vehicula dictum. In feugiat urna non mi tristique egestas tincidunt et massa. Aliquam nec dignissim magna. Aenean nec dui in dui ullamcorper pellentesque vitae sed leo. Ut finibus et ante sit amet consequat. Phasellus scelerisque maximus eros in ullamcorper. Phasellus posuere posuere purus at imperdiet. Fusce mollis metus nec nisl vulputate, vitae dignissim nibh ultricies. Curabitur vitae sem porttitor, venenatis mi ac, dapibus enim. Donec ultricies ultricies justo non ullamcorper. </p>
-          <p class="text-ng-text-content text-md font-[300] leading-8">Nulla facilisi. Curabitur id pharetra dui, et feugiat quam. Nullam facilisis dui nunc, ut pulvinar quam euismod quis. Sed eu purus nec sapien vehicula dictum. In feugiat urna non mi tristique egestas tincidunt et massa. Aliquam nec dignissim magna. Aenean nec dui in dui ullamcorper pellentesque vitae sed leo. Ut finibus et ante sit amet consequat. Phasellus scelerisque maximus eros in ullamcorper. Phasellus posuere posuere purus at imperdiet. Fusce mollis metus nec nisl vulputate, vitae dignissim nibh ultricies. Curabitur vitae sem porttitor, venenatis mi ac, dapibus enim. Donec ultricies ultricies justo non ullamcorper. </p>
+        <div class="border-opacity-60 border border-ng-primary-darker md:m-20 lg:m-20 xl:mx-44 m-4"/>
+        <div class="flex flex-col w-full gap-6 flex-1">
+          <p class="text-ng-text-content text-md font-[300] leading-6">Duis elementum neque at magna lobortis, vel volutpat lacus elementum. Suspendisse congue non nibh et scelerisque. Maecenas molestie posuere turpis ac fermentum. Sed sed justo tempor justo blandit laoreet rutrum eget purus. Pellentesque orci ligula, vulputate eget dictum in, dignissim sed nisl. Sed ut magna vestibulum, cursus mi at, fermentum mauris. Nulla facilisi. Cras tincidunt, turpis id suscipit pulvinar, quam lorem tempus velit, eget feugiat magna lorem vitae nibh. Ut sed molestie eros, et eleifend ante. Nulla viverra dictum sem, at cursus purus molestie quis. Nunc at porttitor felis, non luctus ipsum.</p>
+          <h2 class="text-ng-primary-darker tracking-widest text-lg">Therapist-client fit is important to the
+            therapy experience</h2>
+          <p class="text-ng-text-content text-sm font-[300] leading-5 italic">Integer sed eros a neque pharetra fermentum ac vel elit. Morbi volutpat, leo a rutrum lobortis, ante tortor laoreet risus, in porta risus urna ut urna. Proin at odio nunc. Maecenas vel ultrices magna, sit amet rutrum tellus.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</>
 
 <style>
   @media only screen and (max-width: 1000px) {
-
     .content-area {
       display: flex;
       flex-direction: column-reverse;
@@ -98,7 +113,6 @@ import SvgLoader from "../../assets/SvgLoader.astro";
   }
 
   @media only screen and (min-width: 999px) {
-
     .content-area {
       display: grid;
       grid-template-columns: 55% 45%;
