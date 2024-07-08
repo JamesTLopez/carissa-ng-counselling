@@ -8,6 +8,17 @@ import Footer from 'src/components/Footer.astro';
 import Contact from 'src/components/sections/Contact.astro';
 import LogoBanner from "src/components/LogoBanner.astro"
 ---
+
+<script>
+	import initObserver from "../scripts/observer";
+  
+	document.addEventListener("astro:page-load", () => {
+
+	  initObserver();
+
+	});
+  </script>
+
 <Layout title="Carissa Ng Counselling">
 	<main class="relative flex flex-col min-h-screen mx-auto">
 		<Header/>
