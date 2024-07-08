@@ -9,11 +9,11 @@ import HeaderLink from "./HeaderLink.astro";
 
         if(window.scrollY > 50) {
                 headerDom.classList.remove("bg-opacity-0");
-                headerDom.classList.add("shadow-lg");
+                headerDom.classList.add("shadow-md");
 
         }else {
             headerDom.classList.add("bg-opacity-0");
-            headerDom.classList.remove("shadow-lg");
+            headerDom.classList.remove("shadow-md");
 
         }
    
@@ -21,7 +21,7 @@ import HeaderLink from "./HeaderLink.astro";
 </script>
 
 
-<header class="sticky top-0 py-4 w-full bg-white bg-opacity-0 z-50 shadow-lg transition-all">
+<header class="sticky top-0 py-4 w-full bg-white bg-opacity-0 z-50 transition-all">
     <div class="center-div w-full flex items-center">
         <div class="flex flex-1 items-center">
             <a href="#home" class="text-ng-primary max-w-[250px] min-w-[190px] aspect-auto w-full">
