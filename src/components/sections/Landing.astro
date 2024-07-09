@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import Profile from "../../assets/carissa.jpg"
 import SvgLoader from '../../assets/SvgLoader.astro';
 import Title from '../layouts/Title.astro';
+import Text from '../layouts/Text.astro'
 import SectionWrapper from '../layouts/SectionWrapper.astro'
 import ButtonRoute from '../layouts/ButtonRoute.astro';
 ---
@@ -34,15 +35,15 @@ import ButtonRoute from '../layouts/ButtonRoute.astro';
                 
                 </div>
             </div>
-
             <div class="flex flex-col gap-4 sm:pl-16 px-0 h-full relative lg:items-start items-center">
                 <Title>Welcome! I’m <span class="italic">Carissa.</span></Title>
                 <h3 class="text-ng-primary-darker tracking-[0.2em] lg:tracking-[0.2em] text-sm lg:text-md font-[400] leading-8 lg:text-left text-center">PSYCHOTHERAPIST | RP #13283</h3>
-                <p class="text-ng-text-content text-md font-[300] leading-8">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque odio eget lacus hendrerit, in mattis turpis scelerisque. Ut lobortis dignissim lorem, posuere egestas ante varius molestie. Etiam laoreet orci ut ipsum suscipit malesuada. Duis at ornare eros. Curabitur fermentum a dolor ornare ornare. Donec ac ex eu erat lacinia eleifend.                 </p>
-                <p class="text-ng-text-content text-md font-[300] leading-8">
+                <Text >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque odio eget lacus hendrerit, in mattis turpis scelerisque. Ut lobortis dignissim lorem, posuere egestas ante varius molestie. Etiam laoreet orci ut ipsum suscipit malesuada. Duis at ornare eros. Curabitur fermentum a dolor ornare ornare. Donec ac ex eu erat lacinia eleifend.       
+                </Text>
+                <Text>
                     Life can be complex and unpredictable, so I care about providing an inclusive, safe, empathetic, and nonjudgmental space where you can feel comfortable sharing your journey with me. I believe that you are the expert of your own life, and it would be my deepest privilege to walk alongside you while we work together to overcome obstacles and navigate where you would like to go next.
-                </p>
+                </Text>
                 <ButtonRoute link="#about">
                     MORE ABOUT ME
                 </ButtonRoute>

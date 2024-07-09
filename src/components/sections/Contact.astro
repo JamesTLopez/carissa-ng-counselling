@@ -1,13 +1,15 @@
 ---
+import Text from '../layouts/Text.astro'
+import SubTitle from '../layouts/SubTitle.astro'
+import SectionWrapper from '../layouts/SectionWrapper.astro'
 
 ---
 
-<section id="contact" class="">
-    <div class="center-div py-32 flex flex-col">
-
+<section id="contact">
+    <SectionWrapper>
         <div class="flex lg:flex-row flex-col-reverse gap-10">
             <div class="flex flex-col flex-1 gap-10">
-                <h1 class="text-xl text-ng-primary-darker tracking-widest font-semibold lora">Inquiries and Bookings</h1>
+                <SubTitle>Inquiries and Bookings</SubTitle>
                 <form class="flex flex-col gap-4">
                     <input type="text" placeholder="First Name" class="border p-2"/>
                     <input type="text" placeholder="Last Name"  class="border p-2"/>
@@ -17,16 +19,16 @@
             </div>
             <div class="flex flex-col flex-1 gap-10">
                 <div class="flex flex-col gap-8">
-                    <h1 class="text-xl text-ng-primary-darker tracking-widest font-semibold lora">Book Now</h1>
-                    <p class="text-ng-text-content text-md font-[300] leading-8">Please use the contact form if you would like to book an appointment or a 15-minute consultation over the phone. You can also reach me via email if you have any questions. 
-                    </p>
+                    <SubTitle>Book Now</SubTitle>
+                    <Text>Please use the contact form if you would like to book an appointment or a 15-minute consultation over the phone. You can also reach me via email if you have any questions. 
+                    </Text>
                 </div>
                 <div class="flex flex-col gap-8">
-                    <h1 class="text-xl text-ng-primary-darker tracking-widest font-semibold lora">Available by Appointment Only</h1>
-                    <p class="text-ng-text-content text-md font-[300] leading-8">4353 Lancelot Boulevard, London, Manitoba A0A 0A0, Canada
-                    </p>
+                    <SubTitle >Available by Appointment Only</SubTitle>
+                    <Text>4353 Lancelot Boulevard, London, Manitoba A0A 0A0, Canada
+                    </Text>
                 </div>
             </div>
         </div>
-    </div>
+    </SectionWrapper>
 </section>
