@@ -11,10 +11,10 @@ const { title,img,price,description } = Astro.props;
     </div>
     <div class="flex flex-col text-ng-secondary-content">
         <div class="flex items-center">
-            <h1 class="flex-1 text-xl montserrat font-semibold tracking-wide">{title}</h1>
+            <h1 class="flex-1 lg:text-xl montserrat font-semibold tracking-wide">{title}</h1>
             <p>{price}</p>
         </div>
         {!price  ? <p class="text-sm italic">Please contact me for more information</p>:null}
-        <p class="text-opacity-50 pt-4">{description}</p>
+        <p class="text-opacity-50 pt-4 lg:text-base">{description}</p>
     </div>
 </div>
