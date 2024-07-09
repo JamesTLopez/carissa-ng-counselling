@@ -2,18 +2,20 @@
 import { Image } from "astro:assets";
 import Profile from "../../assets/carissa.jpg";
 import { certifications } from "../../assets";
+import SectionWrapper from "../layouts/SectionWrapper.astro"
+import Title from "../layouts/Title.astro";
+import Text from "../layouts/Text.astro"
 ---
 
 <>
   <section id="about">
-    <div class="flex flex-col center-div py-32">
+    <SectionWrapper>
       <div class="flex flex-col w-full gap-4">
         <div class="pb-20">
-          <h2
-            class="lora text-5xl text-ng-primary-darker tracking-wider"
-          >
+          <Title>
             About<span class="italic"> Me. </span>
-          </h2>
+
+          </Title>
         </div>
         <div class="content-area">
           <div class="flex flex-col w-full gap-6">
@@ -23,14 +25,14 @@ import { certifications } from "../../assets";
               >
                 Education and Experience
               </h1>
-              <p class="text-ng-text-content text-md font-[300] leading-8">
+              <Text>
                 I am a Registered Psychotherapist and a graduate of Trinity
                 Western University, where I earned my Master’s degree in
                 Counselling Psychology. Over the past three years, I have worked
                 at various community agencies, assessing and supporting clients
                 with depression, anxiety, trauma experiences, chronic pain,
                 identity issues, academic concerns, and relationship concerns.
-              </p>
+              </Text>    
               <div class="pt-8 w-full">
                 <h1
                   class="lora text-2xl font-semibold text-ng-primary-darker pb-4 text-left tracking-wider"
@@ -49,14 +51,17 @@ import { certifications } from "../../assets";
                   }
                 </div>
               </div>
-              <p
-                class="pt-8 text-ng-text-content text-md font-[300] poppins-italic leading-8"
+              <div class="pt-8">
+                <Text
+               
               >
                 I believe that every human deserves to have their story seen,
                 heard, and understood. This can be especially important in our
                 busy world where it can be difficult to take the time to slow
                 down and truly listen.
-              </p>
+            </Text>
+              </div>
+
             </div>
           </div>
           <div class="flex flex-col w-full gap-4 items-center lg:items-end">
@@ -73,38 +78,9 @@ import { certifications } from "../../assets";
         </div>
       </div>
     </div>
+  </SectionWrapper>
   </section>
-  <section id="about-2" class="relative bg-ng-secondary-content h-full">
-    <div class="flex flex-col center-div py-32 h-full items-center justify-cente">
-      <div class="flex flex-col lg:flex-row justify-around h-full max-w-[1500px] xl:px-20 lg:px-14">
-        <div class="flex flex-col justify-around lg:min-h-[28rem]">
-          <div class="flex flex-col gap-8">
-            <h1
-            class="lora text-5xl text-ng-primary-darker tracking-wider"
-          >
-            My <span class="italic">Approach</span>
-          </h1>
-          <ul class="text-ng-primary-darker tracking-wider">
-            <li>RELATION</li>
-            <li>WARM</li>
-            <li>SYSTEMS-ORIENTED</li>
-          </ul>
-          </div>
-        </div>
-        <div class="border-opacity-60 border border-ng-primary-darker  lg:mx-22  xl:mx-32 m-10"/>
-        <div class="flex flex-col w-full gap-6 flex-1">
-          <p class="text-ng-text-content text-md font-[300] leading-6">Duis elementum neque at magna lobortis, vel volutpat lacus elementum. Suspendisse congue non nibh et scelerisque. Maecenas molestie posuere turpis ac fermentum. Sed sed justo tempor justo blandit laoreet rutrum eget purus. Pellentesque orci ligula, vulputate eget dictum in, dignissim sed nisl. Sed ut magna vestibulum, cursus mi at, fermentum mauris. Nulla facilisi. Cras tincidunt, turpis id suscipit pulvinar, quam lorem tempus velit, eget feugiat magna lorem vitae nibh. Ut sed molestie eros, et eleifend ante. Nulla viverra dictum sem, at cursus purus molestie quis. Nunc at porttitor felis, non luctus ipsum.</p>
-          
-          <p class="text-ng-text-content text-md font-[300] leading-6">Curabitur ut porta dui. Phasellus lacinia dui quis neque facilisis consectetur. Fusce augue felis, scelerisque at diam in, feugiat luctus purus. Phasellus ac neque luctus, pulvinar ipsum et, maximus risus. Nulla egestas, erat vel ultrices rutrum, erat est consequat nisl, non rhoncus est tortor vitae turpis</p>
 
-          <h2 class="text-ng-primary-darker tracking-widest text-lg">Therapist-client fit is important to the
-            therapy experience</h2>
-          <p class="text-ng-text-content text-sm font-[300] leading-5 italic">Integer sed eros a neque pharetra fermentum ac vel elit. Morbi volutpat, leo a rutrum lobortis, ante tortor laoreet risus, in porta risus urna ut urna. Proin at odio nunc. Maecenas vel ultrices magna, sit amet rutrum tellus.</p>
-        </div>
-      </div>
-      
-    </div>
-  </section>
 </>
 
 <style>

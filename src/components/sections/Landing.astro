@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import Profile from "../../assets/carissa.jpg"
 import SvgLoader from '../../assets/SvgLoader.astro';
 import Title from '../layouts/Title.astro';
-import Wrapper from '../layouts/Wrapper.astro'
+import SectionWrapper from '../layouts/SectionWrapper.astro'
 import ButtonRoute from '../layouts/ButtonRoute.astro';
 ---
 
@@ -13,7 +13,7 @@ import ButtonRoute from '../layouts/ButtonRoute.astro';
   
 
 <section id="home" class="relative">
-    <Wrapper>
+    <SectionWrapper>
         <div class="flex justify-center lg:items-start items-center lg:gap-32 gap-10 lg:flex-row flex-col z-20">
             <!-- image container -->
             <div class="relative flex lg:justify-start justify-center items-start aspect-[10/16]  min-w-[300px] max-w-[350px] lg:max-h-max max-h-[600px]">
@@ -31,7 +31,7 @@ import ButtonRoute from '../layouts/ButtonRoute.astro';
                     <div id="l4" class="absolute -bottom-[12rem] -right-[8rem] w-3/5 rotate-[150deg]">
                         <SvgLoader icon="grass"/>
                     </div>
-                 
+                
                 </div>
             </div>
 
@@ -46,10 +46,7 @@ import ButtonRoute from '../layouts/ButtonRoute.astro';
                 <ButtonRoute link="#about">
                     MORE ABOUT ME
                 </ButtonRoute>
-            
             </div>
         </div>
-    </div>
-    </Wrapper>
-    
+    </SectionWrapper>
 </section>
