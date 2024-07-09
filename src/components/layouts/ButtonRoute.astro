@@ -1,0 +1,9 @@
+---
+const {link} = Astro.props
+---
+
+<div class="flex lg:items-end items-center lg:mx-[0px] mx-auto pt-10">
+    <a href={link} class="min-w-[170px] border py-4 px-6 font-[500] text-sm tracking-widest text-ng-primary border-ng-primary text-nowrap hover:bg-ng-primary hover:text-white transition-colors">
+        <slot/>
+    </a>
+</div>

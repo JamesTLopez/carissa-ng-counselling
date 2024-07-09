@@ -4,6 +4,7 @@ import Profile from "../../assets/carissa.jpg"
 import SvgLoader from '../../assets/SvgLoader.astro';
 import Title from '../layouts/Title.astro';
 import Wrapper from '../layouts/Wrapper.astro'
+import ButtonRoute from '../layouts/ButtonRoute.astro';
 ---
 
 <script>
@@ -42,16 +43,12 @@ import Wrapper from '../layouts/Wrapper.astro'
                 <p class="text-ng-text-content text-md font-[300] leading-8">
                     Life can be complex and unpredictable, so I care about providing an inclusive, safe, empathetic, and nonjudgmental space where you can feel comfortable sharing your journey with me. I believe that you are the expert of your own life, and it would be my deepest privilege to walk alongside you while we work together to overcome obstacles and navigate where you would like to go next.
                 </p>
-                <div class="flex lg:items-end items-center lg:mx-[0px] mx-auto pt-10">
-                    <a href="#about" class="min-w-[170px] border py-4 px-6 font-[500] text-sm tracking-widest text-ng-primary border-ng-primary text-nowrap hover:bg-ng-primary hover:text-white transition-colors">
-                        MORE ABOUT ME
-                    </a>
-                </div>
+                <ButtonRoute link="#about">
+                    MORE ABOUT ME
+                </ButtonRoute>
             
             </div>
         </div>
-
-
     </div>
     </Wrapper>
     
