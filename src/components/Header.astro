@@ -21,29 +21,32 @@ import HeaderLink from "./HeaderLink.astro";
 </script>
 
 
-<header class="sticky top-0 py-4 w-full bg-white bg-opacity-0 z-50 transition-all">
+<header class="sticky top-0 py-4 w-full bg-white bg-opacity-0 z-50 transition-all px-[2rem]">
     <div class="center-div w-full flex items-center gap-4">
-        <div class="flex flex-1 items-center">
-            <a href="#home" class="text-ng-primary max-w-[250px] min-w-[150px] aspect-auto w-full">
-                <SVGLoader icon="header-logo"/>
-            </a>
-     
+        <div class="flex items-center w-full ">
+            <div class="flex flex-1 items-center">
+                <a href="#home" class="text-ng-primary max-w-[250px] min-w-[150px] aspect-auto w-full">
+                    <SVGLoader icon="header-logo"/>
+                </a>
+         
+            </div>
+            <nav class="flex-1 flex items-center justify-center text-md font-[500] mx-auto tracking-widest text-ng-primary">
+                <ul class="list-none md:flex hidden gap-6">
+                    <HeaderLink link="#home" label="HOME"/>
+                    <HeaderLink link="#services" label="SERVICES"/>
+                    <HeaderLink link="#about" label="ABOUT"/>
+                    <!-- <HeaderLink link="#questions" label="Q&A"/> -->
+                    <HeaderLink link="#contact" label="CONTACT"/>
+                </ul>
+    
+            </nav>
+            <div class="flex-1 flex justify-end">
+                <button type="button" class="w-[170px] border py-2 px-4 font-[500] tracking-widest text-ng-primary border-ng-primary text-nowrap hover:bg-ng-primary hover:text-white transition-colors">
+                    BOOK ONLINE
+                </button>
+            </div>
         </div>
-        <nav class="flex-1 flex items-center justify-center text-md font-[500] mx-auto tracking-widest text-ng-primary">
-            <ul class="list-none md:flex hidden gap-6">
-                <HeaderLink link="#home" label="HOME"/>
-                <HeaderLink link="#services" label="SERVICES"/>
-                <HeaderLink link="#about" label="ABOUT"/>
-                <!-- <HeaderLink link="#questions" label="Q&A"/> -->
-                <HeaderLink link="#contact" label="CONTACT"/>
-            </ul>
 
-        </nav>
-        <div class="flex-1 flex justify-end">
-            <button type="button" class="w-[170px] border py-2 px-4 font-[500] tracking-widest text-ng-primary border-ng-primary text-nowrap hover:bg-ng-primary hover:text-white transition-colors">
-                BOOK ONLINE
-            </button>
-        </div>
     </div>
 
 </header>

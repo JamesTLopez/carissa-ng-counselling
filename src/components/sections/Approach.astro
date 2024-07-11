@@ -6,20 +6,20 @@ import Text from "../layouts/Text.astro"
 
 <section id="about-2" class="relative bg-ng-secondary-content h-full">
     <SectionWrapper>
-      <div class="flex flex-col lg:flex-row justify-around h-full max-w-[1500px] xl:px-20 lg:px-14">
+      <div class="flex flex-col lg:flex-row justify-around lg:min-w-[900px] h-full max-w-[1400px] mx-auto w-full lg:py-0 py-20">
         <div class="flex flex-col justify-around lg:min-h-[28rem]">
           <div class="flex flex-col gap-8">
             <Title>
               My <span class="italic">Approach</span>
             </Title>
-          <ul class="text-ng-primary-darker tracking-wider">
+          <ul class="text-ng-primary-darker tracking-wider flex flex-row gap-4 lg:gap-0 lg:justify-start justify-center lg:flex-col lg:text-lg">
             <li>RELATION</li>
             <li>WARM</li>
             <li>SYSTEMS-ORIENTED</li>
           </ul>
           </div>
         </div>
-        <div class="border-opacity-60 border border-ng-primary-darker  lg:mx-22  xl:mx-32 m-10"/>
+        <div class="border-opacity-60 border border-ng-primary-darker clamp my-10"/>
         <div class="flex flex-col w-full gap-6 flex-1">
           <Text>Duis elementum neque at magna lobortis, vel volutpat lacus elementum. Suspendisse congue non nibh et scelerisque. Maecenas molestie posuere turpis ac fermentum. Sed sed justo tempor justo blandit laoreet rutrum eget purus. Pellentesque orci ligula, vulputate eget dictum in, dignissim sed nisl. Sed ut magna vestibulum, cursus mi at, fermentum mauris. Nulla facilisi. Cras tincidunt, turpis id suscipit pulvinar, quam lorem tempus velit, eget feugiat magna lorem vitae nibh. Ut sed molestie eros, et eleifend ante. Nulla viverra dictum sem, at cursus purus molestie quis. Nunc at porttitor felis, non luctus ipsum.</Text>
           <Text>Curabitur ut porta dui. Phasellus lacinia dui quis neque facilisis consectetur. Fusce augue felis, scelerisque at diam in, feugiat luctus purus. Phasellus ac neque luctus, pulvinar ipsum et, maximus risus. Nulla egestas, erat vel ultrices rutrum, erat est consequat nisl, non rhoncus est tortor vitae turpis</Text>
@@ -29,3 +29,15 @@ import Text from "../layouts/Text.astro"
       </div>
     </SectionWrapper>
   </section>
+
+  <style>
+    
+    .clamp {
+      margin-inline: clamp(2%,10%,15%);
+    }
+
+    .clamp-2 {
+      padding-inline: clamp(2%,5%,15%);
+    }
+
+  </style>
