@@ -12,13 +12,10 @@ const initObserver = () => {
 
   const observer = new IntersectionObserver(
     (entries) => {
-      const currentScrollPosition = window.pageYOffset;
-      console.log("yes----", currentScrollPosition);
-
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
-          setCurrent(entry.target);
+          // setCurrent(entry.target);
         } else {
           entry.target.classList.remove("show");
         }
