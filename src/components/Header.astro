@@ -4,78 +4,91 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 
 <script>
-	import "../scripts/header";
+  import "../scripts/header";
 </script>
 
-<header class="sticky top-0 py-4 w-full bg-white bg-opacity-0 z-40 transition-all px-[2rem]">
-    <div class="center-div w-full flex items-center gap-4">
-        <div class="flex items-center w-full  gapy-6">
-            <div class="flex flex-1 items-center">
-                <a href="#home" class="text-ng-primary max-w-[250px] min-w-[150px] aspect-auto w-full">
-                    <SVGLoader icon="header-logo"/>
-                </a>
-            </div>
-            <nav class="flex-1 md:flex hidden items-center justify-center text-md font-[500] mx-auto tracking-widest text-ng-primary">
-                <ul class="list-none md:flex hidden gap-6">
-                    <HeaderLink link="#home" label="HOME"/>
-                    <HeaderLink link="#services" label="SERVICES"/>
-                    <HeaderLink link="#about" label="ABOUT"/>
-                    <!-- <HeaderLink link="#questions" label="Q&A"/> -->
-                    <HeaderLink link="#contact" label="CONTACT"/>
-                </ul>
-            </nav>
-            <div class="flex-1 md:flex hidden justify-end">
-                <button type="button" class="w-[170px] border py-2 px-4 font-[500] tracking-widest text-ng-primary border-ng-primary text-nowrap hover:bg-ng-primary hover:text-white transition-colors">
-                    BOOK ONLINE
-                </button>
-            </div>
-            <div class="flex-1 md:hidden flex items-center justify-end">
-                <button id="ham" type="button" class="w-10 text-ng-primary-darker">
-                    <SVGLoader icon="hamburger"/>
-                </button>
-            </div>
-        </div>
+<header
+  class="sticky top-0 py-4 w-full bg-white bg-opacity-0 z-40 transition-all px-[2rem]"
+>
+  <div class="center-div w-full flex items-center gap-4">
+    <div class="flex items-center w-full gapy-6">
+      <div class="flex flex-1 items-center">
+        <a
+          href="#home"
+          class="text-ng-primary max-w-[200px] min-w-[150px] aspect-auto w-full"
+        >
+          <SVGLoader icon="header-logo" />
+        </a>
+      </div>
+      <nav
+        class="flex-1 md:flex hidden items-center justify-center font-[400] mx-auto tracking-widest text-ng-primary"
+      >
+        <ul class="list-none md:flex hidden gap-6">
+          <HeaderLink link="#home" label="HOME" />
+          <HeaderLink link="#services" label="SERVICES" />
+          <HeaderLink link="#about" label="ABOUT" />
+          <!-- <HeaderLink link="#questions" label="Q&A"/> -->
+          <HeaderLink link="#contact" label="CONTACT" />
+        </ul>
+      </nav>
+      <div class="flex-1 md:flex hidden justify-end">
+        <button
+          type="button"
+          class="w-[170px] border py-2 px-4 font-[500] tracking-widest text-ng-primary border-ng-primary text-nowrap hover:bg-ng-primary hover:text-white transition-colors"
+        >
+          BOOK ONLINE
+        </button>
+      </div>
+      <div class="flex-1 md:hidden flex items-center justify-end">
+        <button id="ham" type="button" class="w-10 text-ng-primary-darker">
+          <SVGLoader icon="hamburger" />
+        </button>
+      </div>
     </div>
-
+  </div>
 </header>
 
-
-<div id="mobile-menu" class="md:hidden fixed inset-0 h-full w-full bg-ng-primary-darker -ml-[100vw] transition-all z-40">
-    <div class="py-4 w-full h-full px-[2rem] flex-col flex">
-        <div class="ml-auto">
-            <button id="close" type="button" class="w-12 z-40 text-white">
-                <SVGLoader icon="close"/>
-            </button>
-        </div>
-        <ul class="list-none flex flex-col text-lg tracking-widest font-[500] text-white divide-y divide-solid divide-opacity-20 divide-ng-primary-content">
-            <li class="flex">    
-                <a id="nav-link" href={"#home"} class="py-6 w-full">HOME</a>
-            </li>
-            <li class="flex">    
-                <a id="nav-link" href={"#services"} class="py-6 w-full">SERVICES</a>
-            </li>
-            <li class="flex">    
-                <a id="nav-link" href={"#about"} class="py-6 w-full">ABOUT</a>
-            </li>
-            <li class="flex">    
-                <a id="nav-link" href={"#contact"} class="py-6 w-full">CONTACT</a>
-            </li>
-        </ul>
-        <div class="flex flex-1 justify-center items-end pb-20">
-            <div class="w-full">
-                <button type="button" class="w-full border py-8 px-4 font-[500] tracking-widest text-white border-white text-nowrap hover:bg-ng-primary hover:text-white transition-colors">
-                    BOOK ONLINE
-                </button>
-            </div>
-        </div>
+<div
+  id="mobile-menu"
+  class="md:hidden fixed inset-0 h-full w-full bg-ng-primary-darker -ml-[100vw] transition-all z-40"
+>
+  <div class="py-4 w-full h-full px-[2rem] flex-col flex">
+    <div class="ml-auto">
+      <button id="close" type="button" class="w-12 z-40 text-white">
+        <SVGLoader icon="close" />
+      </button>
     </div>
-
+    <ul
+      class="list-none flex flex-col text-lg tracking-widest font-[500] text-white divide-y divide-solid divide-opacity-20 divide-ng-primary-content"
+    >
+      <li class="flex">
+        <a id="nav-link" href={"#home"} class="py-6 w-full">HOME</a>
+      </li>
+      <li class="flex">
+        <a id="nav-link" href={"#services"} class="py-6 w-full">SERVICES</a>
+      </li>
+      <li class="flex">
+        <a id="nav-link" href={"#about"} class="py-6 w-full">ABOUT</a>
+      </li>
+      <li class="flex">
+        <a id="nav-link" href={"#contact"} class="py-6 w-full">CONTACT</a>
+      </li>
+    </ul>
+    <div class="flex flex-1 justify-center items-end pb-20">
+      <div class="w-full">
+        <button
+          type="button"
+          class="w-full border py-8 px-4 font-[500] tracking-widest text-white border-white text-nowrap hover:bg-ng-primary hover:text-white transition-colors"
+        >
+          BOOK ONLINE
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <style>
-
-.show{
+  .show {
     margin-left: 0vw;
-}
-
+  }
 </style>

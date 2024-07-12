@@ -1,39 +1,38 @@
 ---
-import Text from '../layouts/Text.astro'
-import SubTitle from '../layouts/SubTitle.astro'
-import SectionWrapper from '../layouts/SectionWrapper.astro'
-
+import Text from "../layouts/Text.astro";
+import SubTitle from "../layouts/SubTitle.astro";
+import SectionWrapper from "../layouts/SectionWrapper.astro";
 ---
 
-<section id="contact">
-    <SectionWrapper>
-        <div class="flex lg:flex-row flex-col-reverse gap-10">
-            <div class="flex flex-col flex-1 gap-4">
-                <SubTitle>Let’s Connect!</SubTitle>
-                <form class="flex flex-col gap-4">
-                    <input type="text" placeholder="First Name" class="border p-2"/>
-                    <input type="text" placeholder="Last Name"  class="border p-2"/>
-                    <input type="text" placeholder="Email"  class="border p-2"/>
-                    <textarea  class="border p-2 min-h-[290px]"/>
-                </form>
-            </div>
-            <div class="flex flex-col flex-1 gap-10">
-                <div class="flex flex-col gap-4">
-                    <SubTitle>Book Now</SubTitle>
-                    <Text>Please use the contact form if you would like to book an appointment or a 15-minute consultation over the phone. You can also reach me via email if you have any questions. 
-                    </Text>
-                </div>
-                <!-- <div class="flex flex-col gap-4">
+<SectionWrapper id="contact">
+  <div class="flex lg:flex-row flex-col-reverse gap-10">
+    <div class="flex flex-col flex-1 gap-4">
+      <SubTitle>Let’s Connect!</SubTitle>
+      <form class="flex flex-col gap-4">
+        <input type="text" placeholder="First Name" class="border p-2" />
+        <input type="text" placeholder="Last Name" class="border p-2" />
+        <input type="text" placeholder="Email" class="border p-2" />
+        <textarea class="border p-2 min-h-[290px]"></textarea>
+      </form>
+    </div>
+    <div class="flex flex-col flex-1 gap-10">
+      <div class="flex flex-col gap-4">
+        <SubTitle>Book Now</SubTitle>
+        <Text
+          >Please use the contact form if you would like to book an appointment
+          or a 15-minute consultation over the phone. You can also reach me via
+          email if you have any questions.
+        </Text>
+      </div>
+      <!-- <div class="flex flex-col gap-4">
                     <SubTitle >Available by Appointment Only</SubTitle>
                     <Text>4353 Lancelot Boulevard, London, Manitoba A0A 0A0, Canada
                     </Text>
                 </div> -->
-                <div class="flex flex-col gap-4">
-                    <SubTitle >Contact me directly!</SubTitle>
-                    <Text>carissangcounselling@gmail.com
-                    </Text>
-                </div>
-            </div>
-        </div>
-    </SectionWrapper>
-</section>
+      <div class="flex flex-col gap-4">
+        <SubTitle>Contact me directly!</SubTitle>
+        <Text>carissangcounselling@gmail.com </Text>
+      </div>
+    </div>
+  </div>
+</SectionWrapper>

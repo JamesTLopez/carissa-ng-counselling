@@ -2,71 +2,66 @@
 import { Image } from "astro:assets";
 import Profile from "../../assets/carissa.jpg";
 import { certifications } from "../../assets";
-import SectionWrapper from "../layouts/SectionWrapper.astro"
+import SectionWrapper from "../layouts/SectionWrapper.astro";
 import Title from "../layouts/Title.astro";
-import Text from "../layouts/Text.astro"
+import Text from "../layouts/Text.astro";
 import SubTitle from "../layouts/SubTitle.astro";
 ---
 
-<section id="about">
-  <SectionWrapper>
-      <div class="flex flex-col lg:w-full mx-auto gap-4">
-        <div class="pb-10">
-          <Title>
-            About<span class="italic"> Me. </span>
-          </Title>
-        </div>
-        <div class="flex lg:flex-row flex-col-reverse gap-8">
-          <div class="flex flex-col w-full gap-6">
-            <div class="flex-1 flex flex-col items-start lg:py-10">
-              <SubTitle>
-                Education and Experience
-              </SubTitle>
-              <Text>
-                I am a Registered Psychotherapist and a graduate of Trinity
-                Western University, where I earned my Master’s degree in
-                Counselling Psychology. Over the past three years, I have worked
-                at various community agencies, assessing and supporting clients
-                with depression, anxiety, trauma experiences, chronic pain,
-                identity issues, academic concerns, and relationship concerns.
-              </Text>    
-              <div class="pt-8 w-full">
-                <SubTitle>
-                  Additional Training and Certifications
-                </SubTitle>
-                <div class="flex flex-col">
-                  {
-                    certifications.map((item) => {
-                      return (
-                        <div class="text-ng-text-content text-left font-[300] leading-8">
-                          - {item.title}
-                        </div>
-                      );
-                    })
-                  }
-                </div>
-              </div>
-              <div class="pt-8">
-                <Text>
-                  I believe that every human deserves to have their story seen,
-                  heard, and understood. This can be especially important in our
-                  busy world where it can be difficult to take the time to slow
-                  down and truly listen.
-                </Text>
-              </div>
+<SectionWrapper id="about">
+  <div class="flex flex-col lg:w-full mx-auto gap-4">
+    <div class="pb-10">
+      <Title>
+        About<span class="italic"> Me. </span>
+      </Title>
+    </div>
+    <div class="flex lg:flex-row flex-col-reverse gap-8">
+      <div class="flex flex-col w-full gap-6">
+        <div class="flex-1 flex flex-col items-start lg:py-10">
+          <SubTitle> Education and Experience </SubTitle>
+          <Text>
+            I am a Registered Psychotherapist and a graduate of Trinity Western
+            University, where I earned my Master’s degree in Counselling
+            Psychology. Over the past three years, I have worked at various
+            community agencies, assessing and supporting clients with
+            depression, anxiety, trauma experiences, chronic pain, identity
+            issues, academic concerns, and relationship concerns.
+          </Text>
+          <div class="pt-8 w-full">
+            <SubTitle> Additional Training and Certifications </SubTitle>
+            <div class="flex flex-col">
+              {
+                certifications.map((item) => {
+                  return (
+                    <div class="text-ng-text-content text-left font-[300] leading-8">
+                      - {item.title}
+                    </div>
+                  );
+                })
+              }
             </div>
           </div>
-          <div class="flex flex-col lg:w-3/4 w-full gap-4 items-center">
-            <div class="relative flex lg:justify-start lg:ml-20 justify-center items-star w-fullt min-w-[100px] max-w-[250px] md:max-w-[350px] lg:max-w-[350px] lg:max-h-max max-h-[600px]">
-              <Image
-                src={Profile}
-                alt="Carissa Ng"
-                class="h-full aspect-[9/14]  object-cover z-20"
-              />
-            </div>
+          <div class="pt-8">
+            <Text>
+              I believe that every human deserves to have their story seen,
+              heard, and understood. This can be especially important in our
+              busy world where it can be difficult to take the time to slow down
+              and truly listen.
+            </Text>
           </div>
         </div>
       </div>
+      <div class="flex flex-col lg:w-3/4 w-full gap-4 items-center">
+        <div
+          class="relative flex lg:justify-start lg:ml-20 justify-center items-star w-fullt min-w-[100px] max-w-[250px] md:max-w-[350px] lg:max-w-[350px] lg:max-h-max max-h-[600px]"
+        >
+          <Image
+            src={Profile}
+            alt="Carissa Ng"
+            class="h-full aspect-[9/14] object-cover z-20"
+          />
+        </div>
+      </div>
     </div>
-  </SectionWrapper>
-</section>
+  </div>
+</SectionWrapper>
