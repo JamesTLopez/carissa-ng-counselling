@@ -11,22 +11,38 @@ export const languages = ["english"];
 
 export const clientFocus = ["Adult Therapy", "Individuals", "Teen Therapy"];
 
-export const sessionFormats = [
-  {
-    title: "INDIVIDUAL VIRTUAL THERAPY",
+export const sessionFormats = {
+  image: {
+    alt: "session",
     img: "https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    price: "$145",
-    description:
-      "You deserve a safe space to explore your identity and relationships, navigate life’s challenges, and experience growth and healing. ",
   },
-  {
-    title: "SPEAKING",
-    img: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    price: "",
-    description:
-      "I want you to feel acknowledged, understood, and supported. You deserve a safe space to navigate and process life's challenges. Currently, I offer virtual therapy services for you to join from the comfort of your own home",
-  },
-];
+  data: [
+    {
+      title: "INDIVIDUAL VIRTUAL THERAPY",
+      img: "https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      price: "$145",
+      description:
+        "You deserve a safe space to explore your identity and relationships, navigate life’s challenges, and experience growth and healing. ",
+      topics: [],
+    },
+    {
+      title: "SPEAKING",
+      img: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      price: "",
+      description:
+        "I am passionate about increasing mental health awareness and making psychoeducation both informative and engaging. With experience in corporate wellness, I am available to speak with your team on a variety of topics, including: ",
+      topics: [
+        "Work-life balance",
+        "Communication skills",
+        "Team-building",
+        "Stress and anxiety",
+        "Diversity and inclusion",
+        "Self-compassion",
+        "Mindfulness",
+      ],
+    },
+  ],
+};
 
 export const therapies = [
   "Acceptance & Commitment Therapy",
