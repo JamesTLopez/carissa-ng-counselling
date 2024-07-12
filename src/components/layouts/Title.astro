@@ -1,9 +1,9 @@
 ---
-
+const { isWhite } = Astro.props;
 ---
 
 <h1
-  class="lg:text-5xl md:text-4xl text-3xl lora tracking-wide font-[100] text-ng-primary-darker lg:text-left text-center"
+  class={`lg:text-5xl md:text-4xl text-3xl lora tracking-wide font-[100]  ${isWhite ? "text-white" : "text-ng-primary-darker"} lg:text-left text-center`}
 >
   <slot />
 </h1>
