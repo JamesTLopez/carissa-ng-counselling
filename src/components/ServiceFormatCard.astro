@@ -1,20 +1,29 @@
 ---
-import { Image } from 'astro:assets';
-
-const { title,img,price,description } = Astro.props;
+import SubTitle from "../components/layouts/SubTitle.astro";
+import Text from "../components/layouts/Text.astro";
+const { title, img, price, description } = Astro.props;
 ---
 
-
-<div class="flex flex-col max-w-[360px] gap-12">
-    <div class="flex justify-center items-center">                
-        <Image class='rounded-full aspect-square' width={360} height={360} alt={title} src={img} />
+<div class="flex flex-row gap-12 w-full">
+  <div class="flex justify-center items-center max-w-[350px]">
+    <img class="aspect-square border-2 border-black" alt={title} src={img} />
+  </div>
+  <div class="flex flex-col justify-center text-ng-text-content">
+    <div class="flex flex-col">
+      <SubTitle>
+        {title}
+      </SubTitle>
+      <p
+        class="text-ng-primary-darker tracking-wide text-sm font-[400] leading-8"
+      >
+        {price}
+      </p>
     </div>
-    <div class="flex flex-col text-ng-secondary-content">
-        <div class="flex items-center">
-            <h1 class="flex-1 lg:text-xl montserrat font-semibold tracking-wide">{title}</h1>
-            <p>{price}</p>
-        </div>
-        {!price  ? <p class="text-sm italic">Please contact me for more information</p>:null}
-        <p class="text-opacity-50 pt-4 lg:text-base">{description}</p>
-    </div>
+    {
+      !price ? (
+        <p class="text-sm italic">Please contact me for more information</p>
+      ) : null
+    }
+    <Text>{description}</Text>
+  </div>
 </div>
