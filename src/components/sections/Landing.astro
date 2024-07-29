@@ -14,7 +14,7 @@ import ButtonRoute from "../layouts/ButtonRoute.astro";
 
 <SectionWrapper id="home">
   <div
-    class="flex justify-start lg:items-start items-center lg:flex-row flex-col z-20 gap-16 lg:gap-0 w-full"
+    class="flex justify-start lg:items-start items-center lg:flex-row flex-col z-20 gap-16 lg:gap-0 w-full pt-10 md:pt-0"
   >
     <!-- image container -->
     <div
@@ -53,29 +53,32 @@ import ButtonRoute from "../layouts/ButtonRoute.astro";
       </div>
     </div>
     <div
-      class="flex flex-col gap-4 lg:pl-16 px-0 h-full relative lg:items-start items-center max-w-[1000px]"
+      class="flex flex-col gap-2 md:gap-4 lg:pl-16 px-0 h-full relative lg:items-start items-center max-w-[1000px]"
     >
-      <Title>Welcome! I’m <span class="italic">Carissa.</span></Title>
       <h3
-        class="text-ng-primary-darker tracking-[0.2em] lg:tracking-[0.2em] text-sm lg:text-md font-[400] leading-8 lg:text-left text-center"
+        class="text-ng-primary-darker tracking-[0.2em] lg:tracking-[0.2em] text-xs lg:text-md font-[400] leading-8 lg:text-left text-center"
       >
         PSYCHOTHERAPIST | RP #13283
       </h3>
-      <Text>
-        I’m so glad you’re here. Maybe you’re navigating conflict in your
-        relationships, experiencing symptoms of depression and anxiety, or
-        struggling to process your emotions. Whatever your reason for being
-        here, my hope is to provide a secure base from which you can be more
-        grounded in who you are and your story, feel closer to the people you
-        care about, and cultivate a life that feels more aligned with your
-        values.
-      </Text>
-      <Text>
-        Life is complex and unpredictable, so it would be my deepest privilege
-        to join you in your journey as we work together to move through life’s
-        challenges and navigate where you would like to go next.
-      </Text>
-      <ButtonRoute link="#about"> MORE ABOUT ME </ButtonRoute>
+      <Title>Welcome! I’m <span class="italic">Carissa.</span></Title>
+
+      <div class="pt-2">
+        <Text>
+          I’m so glad you’re here. Maybe you’re navigating conflict in your
+          relationships, experiencing symptoms of depression and anxiety, or
+          struggling to process your emotions. Whatever your reason for being
+          here, my hope is to provide a secure base from which you can be more
+          grounded in who you are and your story, feel closer to the people you
+          care about, and cultivate a life that feels more aligned with your
+          values.
+        </Text>
+        <Text>
+          Life is complex and unpredictable, so it would be my deepest privilege
+          to join you in your journey as we work together to move through life’s
+          challenges and navigate where you would like to go next.
+        </Text>
+        <ButtonRoute link="#about"> MORE ABOUT ME </ButtonRoute>
+      </div>
     </div>
   </div>
 </SectionWrapper>
