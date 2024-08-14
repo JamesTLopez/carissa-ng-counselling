@@ -47,3 +47,13 @@ anime({
   direction: "alternate",
   loop: false,
 });
+
+anime({
+  targets: "#flower-1 path",
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: "easeInOutSine",
+  duration: 1000,
+  delay: (el, i) => 800,
+  direction: "normal",
+  loop: false,
+});
