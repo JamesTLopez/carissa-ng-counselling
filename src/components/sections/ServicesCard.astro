@@ -1,0 +1,49 @@
+---
+import { Image } from "astro:assets";
+import SubTitle from "../layouts/SubTitle.astro";
+import ListItem from "../layouts/ListItem.astro";
+const { title, img, price, description, topics } = Astro.props;
+---
+
+<div class="max-w-[75%] lg:max-w-[50%]">
+  <div class="flex justify-center w-full">
+    <Image
+      src={img}
+      height={500}
+      width={500}
+      class="mx-auto"
+      alt="image of session"
+      class="aspect-square border-4 border-opacity-10 border-ng-primary-darker"
+    />
+  </div>
+  <div class="pt-10">
+    <SubTitle>{title}</SubTitle>
+
+    {
+      !price ? (
+        <p class="text-ng-primary-darker tracking-wide text-sm font-[400] leading-10 md:text-start text-center">
+          Please contact me for more information
+        </p>
+      ) : (
+        <p class="text-ng-primary-darker tracking-wide text-base font-[400] leading-10 min-h-[40px]">
+          {price}
+        </p>
+      )
+    }
+    <p class="text-ng-text-content text-base font-[300] leading-2">
+      {description}
+    </p>
+
+    {
+      topics && topics.length > 0 ? (
+        <div class="pt-10 pl-10">
+          <ul class="flex flex-col list-disc">
+            {topics.map((topic) => {
+              return <ListItem>{topic}</ListItem>;
+            })}
+          </ul>
+        </div>
+      ) : null
+    }
+  </div>
+</div>

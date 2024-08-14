@@ -1,3 +1,6 @@
+import Individal from "./assets/individual.jpg";
+import Speaking from "./assets/speaking.jpg";
+
 export const specialties = [
   "Cultural Identity",
   "Anger Management",
@@ -43,6 +46,33 @@ export const sessionFormats = {
     },
   ],
 };
+
+export const sessionFormats_2 = [
+  {
+    title: "INDIVIDUAL VIRTUAL THERAPY",
+    img: Individal,
+    price: "$145",
+    description:
+      "You deserve a safe space to explore your identity and relationships, navigate life’s challenges, and experience growth and healing. ",
+    topics: [],
+  },
+  {
+    title: "SPEAKING",
+    img: Speaking,
+    price: "",
+    description:
+      "I am passionate about increasing mental health awareness and making psychoeducation both informative and engaging. With experience in corporate wellness, I am available to speak with your team on a variety of topics, including: ",
+    topics: [
+      "Work-life balance",
+      "Communication skills",
+      "Team-building",
+      "Stress and anxiety",
+      "Diversity and inclusion",
+      "Self-compassion",
+      "Mindfulness",
+    ],
+  },
+];
 
 export const therapies = [
   "Acceptance & Commitment Therapy",
