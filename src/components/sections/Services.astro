@@ -1,37 +1,40 @@
 ---
 import ServiceFormatCard from "../ServiceFormatCard.astro";
 
-import {sessionFormats,specialties,supportAreas} from  "../../assets"
+import { supportAreas } from "../../assets";
+import SectionWrapper from "../layouts/SectionWrapper.astro";
+import Title from "../../components/layouts/Title.astro";
+import ListItem from "../../components/layouts/ListItem.astro";
+import SubTitle from "../../components/layouts/SubTitle.astro";
 ---
 
-<section id="services" class="bg-custom-gradient">
-    <div class="center-div py-20 lg:py-32 flex flex-col">
-        <!-- TITLE -->
-        <div class="flex flex-col pb-20">
-            <h1 class="lg:text-5xl text-3xl lora tracking-wider pb-6 text-ng-secondary-content text-center">Therapy <span class="italic">Services.</span></h1>
+<div class="bg-custom-gradient">
+  <SectionWrapper id="services">
+    <div class="flex flex-col gap-4">
+      <!-- TITLE -->
+      <div class="flex flex-col pb-10 text-white items-center justify-center">
+        <Title isWhite={false}>
+          <span class="italic">Services.</span>
+        </Title>
+      </div>
+      <!-- CONTENT SERVICES -->
+      <div class="flex justify-center items-center gap-20 flex-col w-full">
+        <div class="flex flex-col gap-10 justify-around items-center">
+          <ServiceFormatCard />
         </div>
-        <!-- CONTENT SERVICES -->
-        <div class="flex justify-center items-center gap-20 flex-col w-full">
-            <div class="flex md:flex-row flex-col gap-10 justify-around items-center w-4/5">
-                {sessionFormats.map(item => <ServiceFormatCard {...item}/>)}
-            </div>
-            <div>
-            <div class="flex flex-col gap-8 p-10 w-full mt-20">
-                <h1 class="text-start text-ng-secondary-content lora font-semibold text-3xl tracking-wider">Specialties.</h1>
-                <div class="flex flex-wrap gap-4">
-                    {specialties.map(item =>{ 
-                        return <div class="text-ng-secondary-content lora text-lg border py-2 px-6 rounded-3xl">{item}</div>
-                    })}
-                </div>
-            </div>
-            <div class="flex flex-col gap-8 p-10 w-full mt-20">
-                <h1 class="text-start text-ng-secondary-content lora font-semibold text-3xl tracking-wider">Other areas of support.</h1>
-                <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 flex-wrap">
-                    {supportAreas.map(item =>{ 
-                        return <div class="text-ng-secondary-content lora text-lg py-2 text-ellipsis min-w-[260px]">+ {item}</div>
-                    })}
-                </div>
-            </div>
+        <div class="flex flex-col gap-8 w-full">
+          <SubTitle> AREAS OF SUPPORT </SubTitle>
+          <div
+            class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 flex-wrap"
+          >
+            {
+              supportAreas.map((item) => {
+                return <ListItem>{item}</ListItem>;
+              })
+            }
+          </div>
         </div>
-        </div>
-</section>
+      </div>
+    </div>
+  </SectionWrapper>
+</div>

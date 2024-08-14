@@ -1,53 +1,87 @@
 ---
-import { Image } from 'astro:assets';
-import Profile from "../../assets/carissa.jpg"
-import SvgLoader from '../../assets/SvgLoader.astro';
-import Title from '../layouts/Title.astro';
-import Text from '../layouts/Text.astro'
-import SectionWrapper from '../layouts/SectionWrapper.astro'
-import ButtonRoute from '../layouts/ButtonRoute.astro';
+import { Image } from "astro:assets";
+import Profile from "../../assets/carissa.jpg";
+import SvgLoader from "../../assets/SvgLoader.astro";
+import Title from "../layouts/Title.astro";
+import Text from "../layouts/Text.astro";
+import SectionWrapper from "../layouts/SectionWrapper.astro";
+import ButtonRoute from "../layouts/ButtonRoute.astro";
 ---
 
 <script>
-    import "@scripts/landing";
-  </script>
-  
+  import "@scripts/landing";
+</script>
 
-<section id="home" class="relative">
-    <SectionWrapper>
-        <div class="flex justify-center lg:items-start items-center lg:flex-row flex-col z-20 gap-16 lg:gap-0">
-            <!-- image container -->
-            <div class="relative flex lg:justify-start justify-center items-star w-fullt min-w-[100px] max-w-[250px] md:max-w-[350px] lg:max-w-[350px] lg:max-h-max max-h-[600px]">
-                <Image src={Profile} alt="Carissa Ng" class="h-full aspect-[9/14]  object-cover z-20"/>
-                <div  class="absolute w-full h-full bg-red-200 opacity-10 z-10">
-                    <div id="l1" class="absolute -top-[12rem] -left-[10rem] w-3/4 -rotate-[35deg]">
-                        <SvgLoader icon="grass"/>
-                    </div>
-                    <div id="l2" class="absolute -bottom-[12rem] -left-[10rem] w-3/4 -rotate-[135deg]">
-                        <SvgLoader icon="grass"/>
-                    </div>
-                    <div id="l3" class="absolute -top-[12rem] -right-[10rem] w-3/4 rotate-[35deg]">
-                        <SvgLoader icon="grass"/>
-                    </div>
-                    <div id="l4" class="absolute -bottom-[12rem] -right-[8rem] w-3/5 rotate-[150deg]">
-                        <SvgLoader icon="grass"/>
-                    </div>
-                
-                </div>
-            </div>
-            <div class="flex flex-col gap-4 lg:pl-16 px-0 h-full relative lg:items-start items-center">
-                <Title>Welcome! I’m <span class="italic">Carissa.</span></Title>
-                <h3 class="text-ng-primary-darker tracking-[0.2em] lg:tracking-[0.2em] text-sm lg:text-md font-[400] leading-8 lg:text-left text-center">PSYCHOTHERAPIST | RP #13283</h3>
-                <Text >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin scelerisque odio eget lacus hendrerit, in mattis turpis scelerisque. Ut lobortis dignissim lorem, posuere egestas ante varius molestie. Etiam laoreet orci ut ipsum suscipit malesuada. Duis at ornare eros. Curabitur fermentum a dolor ornare ornare. Donec ac ex eu erat lacinia eleifend.       
-                </Text>
-                <Text>
-                    Life can be complex and unpredictable, so I care about providing an inclusive, safe, empathetic, and nonjudgmental space where you can feel comfortable sharing your journey with me. I believe that you are the expert of your own life, and it would be my deepest privilege to walk alongside you while we work together to overcome obstacles and navigate where you would like to go next.
-                </Text>
-                <ButtonRoute link="#about">
-                    MORE ABOUT ME
-                </ButtonRoute>
-            </div>
+<section
+  id="home"
+  class="relative flex justify-start lg:items-start items-center lg:flex-row flex-col center-div lg:py-32 md:py-20 py-10 min-h-[600px] px-4"
+>
+  <div
+    class="flex justify-start lg:items-start items-center lg:flex-row flex-col z-20 gap-16 lg:gap-0 w-full pt-10 md:pt-0"
+  >
+    <!-- image container -->
+    <div
+      class="relative flex lg:justify-start justify-center items-start min-w-[100px] lg:min-w-[300px] max-w-[250px] md:max-w-[350px] lg:max-w-[350px] lg:max-h-max max-h-[600px]"
+    >
+      <Image
+        src={Profile}
+        alt="Carissa Ng"
+        class="h-full aspect-[9/14] object-cover z-20"
+      />
+      <div class="absolute w-full h-full bg-red-200 opacity-10 z-10">
+        <div
+          id="l1"
+          class="absolute -top-[12rem] -left-[10rem] w-3/4 -rotate-[35deg]"
+        >
+          <SvgLoader icon="grass" />
         </div>
-    </SectionWrapper>
+        <div
+          id="l2"
+          class="absolute -bottom-[12rem] -left-[10rem] w-3/4 -rotate-[135deg]"
+        >
+          <SvgLoader icon="grass" />
+        </div>
+        <div
+          id="l3"
+          class="absolute -top-[12rem] -right-[10rem] w-3/4 rotate-[35deg]"
+        >
+          <SvgLoader icon="grass" />
+        </div>
+        <div
+          id="l4"
+          class="absolute -bottom-[12rem] -right-[8rem] w-3/5 rotate-[150deg]"
+        >
+          <SvgLoader icon="grass" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col gap-2 md:gap-4 lg:pl-16 px-0 h-full relative lg:items-start items-center max-w-[1000px]"
+    >
+      <h3
+        class="text-ng-primary-darker tracking-[0.2em] lg:tracking-[0.2em] text-xs lg:text-md font-[400] leading-8 lg:text-left text-center"
+      >
+        PSYCHOTHERAPIST | RP #13283
+      </h3>
+      <Title>Welcome! I’m <span class="italic">Carissa.</span></Title>
+
+      <div class="pt-2">
+        <Text>
+          I’m so glad you’re here. Maybe you’re navigating conflict in your
+          relationships, experiencing symptoms of depression and anxiety, or
+          struggling to process your emotions. Whatever your reason for being
+          here, my hope is to provide a secure base from which you can be more
+          grounded in who you are and your story, feel closer to the people you
+          care about, and cultivate a life that feels more aligned with your
+          values.
+        </Text>
+        <Text>
+          Life is complex and unpredictable, so it would be my deepest privilege
+          to join you in your journey as we work together to move through life’s
+          challenges and navigate where you would like to go next.
+        </Text>
+        <ButtonRoute link="#about"> MORE ABOUT ME </ButtonRoute>
+      </div>
+    </div>
+  </div>
 </section>
