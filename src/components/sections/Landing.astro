@@ -6,6 +6,7 @@ import Text from "../layouts/Text.astro";
 import ButtonRoute from "../layouts/ButtonRoute.astro";
 import ProfileLeafs from "../animations/ProfileLeafs.astro";
 import Flower from "../animations/Flower.astro";
+import SVGLoader from "../../assets/SvgLoader.astro";
 ---
 
 <script>
@@ -14,7 +15,7 @@ import Flower from "../animations/Flower.astro";
 
 <section
   id="home"
-  class="relative flex justify-start lg:items-start items-center lg:flex-row flex-col center-div lg:py-32 md:py-24 py-16 min-h-[600px] px-4 w-full hidden-custom"
+  class="relative flex justify-start lg:items-start items-center lg:flex-row flex-col center-div lg:py-32 md:py-24 py-16 min-h-[900px] px-4 w-full hidden-custom"
 >
   <div
     class="flex justify-start lg:items-start items-center lg:flex-row flex-col z-20 gap-16 lg:gap-0 pt-10 md:pt-0 w-full"
@@ -33,12 +34,14 @@ import Flower from "../animations/Flower.astro";
   </div>
   <!-- Content container -->
   <div
-    class="absolute spin right-16 bottom-32 lg:right-[5%] lg:bottom-[15%] text-ng-primary-darker w-[200px] h-[200px] lg:mt-0 mt-14"
+    class="absolute right-16 bottom-32 lg:right-[5%] lg:bottom-[15%] text-ng-primary-darker w-[200px] h-[200px] lg:mt-0 mt-14 opacity-10"
   >
-    <!-- insert logo here -->
+    <div class="aspect-square min-w-[200px]">
+      <!-- <SVGLoader icon="carissalogo" /> -->
+    </div>
   </div>
   <div
-    class="my-auto lg:ml-[2%] lg:gap-4 lg:pl-16 flex flex-col px-0 h-full relative lg:items-start items-center lg:mt-0 mt-14"
+    class="my-auto lg:ml-[2%] lg:gap-4 lg:pl-8 flex flex-col px-0 h-full relative lg:items-start items-center lg:mt-0 mt-14"
   >
     <h3
       class="text-ng-primary-darker tracking-[0.2em] lg:tracking-[0.2em] text-xs lg:text-md font-[400] leading-8 lg:text-left text-center"
