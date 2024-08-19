@@ -3,31 +3,46 @@ import SVGLoader from "../assets/SvgLoader.astro";
 import HeaderLink from "./HeaderLink.astro";
 ---
 
-
 <footer class="bg-ng-primary min-h-[500px] flex flex-col">
-    <div class="center-div w-full h-full flex flex-col flex-1 lg:py-20 py-12">
-        <div class="flex flex-col h-full flex-1">
-            <div class="flex-1 flex justify-between border-b-2 pb-10">
-                <div class="flex flex-col justify-around items-start flex-1 ">
-                    <ul class="text-ng-secondary-content flex flex-col gap-2">
-                        <HeaderLink link="#home" label="HOME"/>
-                        <HeaderLink link="#services" label="SERVICES"/>
-                        <HeaderLink link="#about" label="ABOUT"/>
-                        <!-- <HeaderLink link="#questions" label="+ Q&A"/> -->
-                        <HeaderLink link="#contact" label="CONTACT"/>
-                    </ul>
-                </div>
-                <div class="flex flex-col justify-around items-center flex-1 ">
-                    <div class="aspect-square max-w-[160px] min-w-[125px]">
-                        <SVGLoader icon="carissalogo"/>
-                    </div>                
-                </div>
-                <div class="flex flex-col justify-around items-end flex-1"></div>
-            </div>
-            <div class="flex flex-col items-center text-ng-secondary-content pt-10">
-                <h2 class="text-xs">COPYRIGHT © 2024 CARISSA NG COUNSELLING.</h2>
-                <h2 class="text-xs">Website by James Lopez</h2>
-            </div>
+  <div class="center-div w-full h-full flex flex-col flex-1 lg:py-20 py-12">
+    <div class="flex flex-col h-full flex-1">
+      <div class="flex-1 flex justify-between border-b-2 pb-10">
+        <div class="flex flex-col justify-around items-start flex-1">
+          <ul class="text-ng-secondary-content flex flex-col gap-2">
+            <HeaderLink link="#home" label="HOME" />
+            <HeaderLink link="#services" label="SERVICES" />
+            <HeaderLink link="#about" label="ABOUT" />
+            <!-- <HeaderLink link="#questions" label="+ Q&A"/> -->
+            <HeaderLink link="#contact" label="CONTACT" />
+          </ul>
         </div>
+        <div class="flex flex-col justify-around items-center flex-1">
+          <div class="aspect-square max-w-[160px] min-w-[125px]">
+            <SVGLoader icon="carissalogo" />
+          </div>
+        </div>
+        <div class="flex flex-col justify-around items-end flex-1">
+          <a
+            href="https://www.psychologytoday.com/profile/1073448"
+            class="sx-verified-seal"></a>
+          <script
+            type="text/javascript"
+            src="https://member.psychologytoday.com/verified-seal.j
+s"
+            data-badge="10"
+            data-id="1073448"
+            data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZ
+GF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFsc
+y9bQkFER0VdL3Byb2ZpbGUvW1BST0ZJTEVfSURdP2
+NhbGxiYWNrPXN4Y2FsbGJhY2s="
+          ></script>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center text-ng-secondary-content pt-10">
+        <h2 class="text-xs">COPYRIGHT © 2024 CARISSA NG COUNSELLING.</h2>
+        <h2 class="text-xs">Website by James Lopez</h2>
+      </div>
     </div>
+  </div>
 </footer>
