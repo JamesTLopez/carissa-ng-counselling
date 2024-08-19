@@ -1,5 +1,6 @@
 import Individal from "./assets/individual.jpg";
 import Speaking from "./assets/speaking.jpg";
+import Affordable from "./assets/affordable.jpg";
 
 export const specialties = [
   "Cultural Identity",
@@ -74,7 +75,7 @@ export const sessionFormats_2 = [
   },
   {
     title: "AFFORDABLE THERAPY",
-    img: "https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: Affordable,
     price: "",
     description:
       "I believe that everyone deserves access to quality counselling, regardless of financial circumstances. I offer a sliding scale option to a limited number of clients, allowing you to receive the support you need at a rate that fits your budget.",
