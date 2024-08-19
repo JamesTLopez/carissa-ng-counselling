@@ -16,16 +16,16 @@ const { title, img, price, description, topics } = Astro.props;
       class="aspect-square border-4 border-opacity-10 border-ng-primary-darker"
     />
   </div>
-  <div class="pt-10">
+  <div class="flex flex-col gap-2 pt-10">
     <SubTitle>{title}</SubTitle>
 
     {
       !price ? (
-        <p class="text-ng-primary-darker tracking-wide text-sm font-[400] leading-10 md:text-start text-center">
+        <p class="text-ng-primary-darker tracking-wide text-sm font-[400] md:text-start text-center">
           Please contact me for more information
         </p>
       ) : (
-        <p class="text-ng-primary-darker tracking-wide text-base font-[400] leading-10 min-h-[40px]">
+        <p class="text-ng-primary-darker tracking-wide text-base font-[400] min-h-[40px]">
           {price}
         </p>
       )
@@ -36,7 +36,7 @@ const { title, img, price, description, topics } = Astro.props;
 
     {
       topics && topics.length > 0 ? (
-        <div class="pt-10 pl-10">
+        <div class="pt-2 pl-10">
           <ul class="flex flex-col list-disc">
             {topics.map((topic) => {
               return <ListItem>{topic}</ListItem>;
