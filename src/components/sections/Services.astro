@@ -9,7 +9,7 @@ import SubTitle from "../../components/layouts/SubTitle.astro";
 import ServicesCard from "./ServicesCard.astro";
 ---
 
-<div class="bg-custom-gradient">
+<div class="bg-[#f7f3ee]">
   <SectionWrapper id="services">
     <div class="flex flex-col gap-4 w-full">
       <!-- TITLE -->
@@ -21,7 +21,7 @@ import ServicesCard from "./ServicesCard.astro";
       <!-- CONTENT SERVICES -->
       <div class="flex justify-center items-center gap-20 flex-col w-full">
         <div
-          class="inline-grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-0 items-start justify-items-center"
+          class="inline-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-0 items-start justify-items-center"
         >
           {
             sessionFormats_2.map((item) => {
@@ -29,7 +29,7 @@ import ServicesCard from "./ServicesCard.astro";
             })
           }
         </div>
-        <div class="flex flex-col gap-8 w-full py-10">
+        <div class="flex flex-col gap-8 w-[90%] ml-auto py-10">
           <SubTitle> AREAS OF SUPPORT </SubTitle>
           <div
             class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 flex-wrap"
