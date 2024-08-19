@@ -5,7 +5,6 @@ import Title from "../layouts/Title.astro";
 import Text from "../layouts/Text.astro";
 import ButtonRoute from "../layouts/ButtonRoute.astro";
 import ProfileLeafs from "../animations/ProfileLeafs.astro";
-import Flower from "../animations/Flower.astro";
 ---
 
 <script>
@@ -20,13 +19,11 @@ import Flower from "../animations/Flower.astro";
     class="flex justify-start lg:items-start items-center lg:flex-row flex-col z-20 gap-16 lg:gap-0 pt-10 md:pt-0 w-full"
   >
     <!-- image container -->
-    <div class="relative flex min-w-[270px]">
+    <div class="relative flex min-w-[300px] max-w-[400px]">
       <Image
         src={Profile}
         alt="Carissa Ng"
         class="h-full object-cover z-20 border-4 border-ng-primary-darker border-opacity-10"
-        width={400}
-        height={580}
       />
       <ProfileLeafs />
     </div>
