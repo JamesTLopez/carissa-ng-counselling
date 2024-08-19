@@ -21,7 +21,7 @@ const initObserver = () => {
         }
       });
     },
-    { threshold: 0.3 }
+    { threshold: 0.1 }
   );
 
   const elements = document.querySelectorAll("section");
