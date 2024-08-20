@@ -16,7 +16,7 @@ const { title, img, price, description, topics } = Astro.props;
       class="aspect-square border-4 border-opacity-10 border-ng-primary-darker"
     />
   </div>
-  <div class="flex flex-col gap-2 pt-10">
+  <div class="flex flex-col gap-2 pt-10 md:pb-0 pb-16">
     <SubTitle>{title}</SubTitle>
 
     {
@@ -25,12 +25,14 @@ const { title, img, price, description, topics } = Astro.props;
           Please contact me for more information
         </p>
       ) : (
-        <p class="text-ng-primary-darker tracking-wide text-base font-[400] min-h-[40px]">
+        <p class="text-ng-primary-darker tracking-wide text-base font-[400] min-h-[40px] md:text-start text-center ">
           {price}
         </p>
       )
     }
-    <p class="text-ng-text-content text-base font-[300] leading-2">
+    <p
+      class="text-ng-text-content text-base font-[300] leading-2 md:text-start text-center"
+    >
       {description}
     </p>
 
