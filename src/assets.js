@@ -51,7 +51,7 @@ export const sessionFormats = {
 export const sessionFormats_2 = [
   {
     title: "INDIVIDUAL SESSIONS (VIRTUAL)",
-    img: Individal,
+    img: Speaking,
     price: "$145",
     description:
       "You deserve a safe space to explore your identity and relationships, navigate life’s challenges, and experience growth and healing. ",
@@ -68,7 +68,7 @@ export const sessionFormats_2 = [
   },
   {
     title: "SPEAKING",
-    img: Speaking,
+    img: Individal,
     price: "",
     description:
       "I am passionate about increasing mental health awareness and making psychoeducation both informative and engaging. With experience in corporate wellness, I am available to speak with your team on a variety of topics, including: ",
@@ -165,7 +165,7 @@ export const experience = [
 export const certifications = [
   {
     year: "2021",
-    title: "AEDP Level 1",
+    title: "AEDPAccelerated Experiential Dynamic Psychotherapy (AEDP) Level 1",
     location: "Mississauga, ON",
   },
   {
