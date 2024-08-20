@@ -13,13 +13,13 @@ import ProfileLeafs from "../animations/ProfileLeafs.astro";
 
 <section
   id="home"
-  class="relative flex justify-start lg:items-start items-center lg:flex-row flex-col center-div lg:py-32 md:py-24 py-16 min-h-[600px] px-4 w-full hidden-custom"
+  class="relative flex justify-start lg:items-start items-center lg:flex-row flex-col center-div lg:py-32 md:py-24 pb-16 min-h-[600px] px-4 w-full hidden-custom"
 >
   <div
-    class="flex justify-start lg:items-start items-center lg:flex-row flex-col z-20 gap-16 lg:gap-0 pt-10 md:pt-0 w-full"
+    class="flex justify-start lg:items-start items-center lg:flex-row flex-col z-20 gap-16 lg:gap-0 pt-2 md:pt-0 md:w-full w-3/4"
   >
     <!-- image container -->
-    <div class="relative flex min-w-[300px] max-w-[400px]">
+    <div class="relative flex md:min-w-[300px] max-w-[400px]">
       <Image
         src={Profile}
         alt="Carissa Ng"
@@ -28,14 +28,13 @@ import ProfileLeafs from "../animations/ProfileLeafs.astro";
       <ProfileLeafs />
     </div>
   </div>
-  <!-- Content container -->
   <div
     class="absolute spin right-16 bottom-32 lg:right-[5%] lg:bottom-[15%] text-ng-primary-darker w-[200px] h-[200px] lg:mt-0 mt-14"
   >
     <!-- insert logo here -->
   </div>
   <div
-    class="my-auto lg:ml-[2%] lg:gap-4 lg:pl-16 flex flex-col px-0 h-full relative lg:items-start items-center lg:mt-0 mt-14"
+    class="my-auto lg:ml-[2%] lg:gap-4 lg:pl-16 flex flex-col px-0 h-full relative lg:items-start items-center lg:mt-0 md:mt-14 mt-6"
   >
     <h3
       class="text-ng-primary-darker tracking-[0.2em] lg:tracking-[0.2em] text-xs lg:text-md font-[400] leading-8 lg:text-left text-center"

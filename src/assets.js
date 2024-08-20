@@ -1,4 +1,4 @@
-import Individal from "./assets/individual.jpg";
+import Individal from "./assets/carissa_branding.jpg";
 import Speaking from "./assets/speaking.jpg";
 import Affordable from "./assets/affordable.jpg";
 
@@ -50,11 +50,20 @@ export const sessionFormats = {
 
 export const sessionFormats_2 = [
   {
-    title: "INDIVIDUAL VIRTUAL THERAPY",
+    title: "INDIVIDUAL SESSIONS (VIRTUAL)",
     img: Individal,
     price: "$145",
     description:
       "You deserve a safe space to explore your identity and relationships, navigate life’s challenges, and experience growth and healing. ",
+    topics: [],
+  },
+
+  {
+    title: "AFFORDABLE THERAPY",
+    img: Affordable,
+    price: "",
+    description:
+      "I believe that everyone deserves access to quality counselling, regardless of financial circumstances. I offer a sliding scale option to a limited number of clients, allowing you to receive the support you need at a rate that fits your budget.",
     topics: [],
   },
   {
@@ -72,14 +81,6 @@ export const sessionFormats_2 = [
       "Self-compassion",
       "Mindfulness",
     ],
-  },
-  {
-    title: "AFFORDABLE THERAPY",
-    img: Affordable,
-    price: "",
-    description:
-      "I believe that everyone deserves access to quality counselling, regardless of financial circumstances. I offer a sliding scale option to a limited number of clients, allowing you to receive the support you need at a rate that fits your budget.",
-    topics: [],
   },
 ];
 

@@ -13,7 +13,7 @@ const { title, img, price, description, topics } = Astro.props;
       width={500}
       class="mx-auto"
       alt="image of session"
-      class="aspect-square border-4 border-opacity-10 border-ng-primary-darker"
+      class="aspect-square border-4 border-opacity-10 border-ng-primary-darker object-cover"
     />
   </div>
   <div class="flex flex-col gap-2 pt-10 md:pb-0 pb-16">
@@ -21,18 +21,16 @@ const { title, img, price, description, topics } = Astro.props;
 
     {
       !price ? (
-        <p class="text-ng-primary-darker tracking-wide text-sm font-[400] md:text-start text-center">
-          Please contact me for more information
+        <p class="text-ng-primary-darker tracking-wide text-sm font-[400] ">
+          Please contact me for more information.
         </p>
       ) : (
-        <p class="text-ng-primary-darker tracking-wide text-base font-[400] min-h-[40px] md:text-start text-center ">
+        <p class="text-ng-primary-darker tracking-wide text-base font-[400] min-h-[40px]  ">
           {price}
         </p>
       )
     }
-    <p
-      class="text-ng-text-content text-base font-[300] leading-2 md:text-start text-center"
-    >
+    <p class="text-ng-text-content text-base font-[300] leading-2">
       {description}
     </p>
 
