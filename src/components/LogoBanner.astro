@@ -1,10 +1,15 @@
-
 ---
-const { banner } = Astro.props
----
+import { Image } from "astro:assets";
 
+const { banner } = Astro.props;
+---
 
 <div class="relative w-full h-full min-h-[375px]">
-    <img class="absolute inset-0 aspect-video h-full w-full object-cover object-center brightness-50" src={banner} alt="Peaceful" />
+  <Image
+    class="absolute inset-0 aspect-video h-full w-full object-cover object-center brightness-50"
+    src={banner}
+    width={"1280"}
+    height={"720"}
+    alt="Peaceful"
+  />
 </div>
-

@@ -2,6 +2,7 @@
 interface Props {
   title: string;
 }
+import SpeedInsights from "@vercel/speed-insights/astro";
 import { ViewTransitions } from "astro:transitions";
 const { title } = Astro.props;
 ---
@@ -22,6 +23,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <ViewTransitions />
+    <SpeedInsights />
   </head>
   <body class="poppins">
     <slot />
