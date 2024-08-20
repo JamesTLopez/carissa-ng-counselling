@@ -8,11 +8,16 @@ import SectionWrapper from "../layouts/SectionWrapper.astro";
   <div class="flex lg:flex-row flex-col-reverse gap-10">
     <div class="flex flex-col flex-1 gap-4">
       <SubTitle>Let’s Connect!</SubTitle>
-      <form class="flex flex-col gap-4">
+      <form
+        action="https://formspree.io/f/xjkbeeyo"
+        method="POST"
+        class="flex flex-col gap-4"
+      >
         <input type="text" placeholder="First Name" class="border p-2" />
         <input type="text" placeholder="Last Name" class="border p-2" />
-        <input type="text" placeholder="Email" class="border p-2" />
-        <textarea class="border p-2 min-h-[290px]"></textarea>
+        <input type="email" placeholder="Email" class="border p-2" />
+        <textarea name="message" class="border p-2 min-h-[290px]"></textarea>
+        <button type="submit">Send</button>
       </form>
     </div>
     <div class="flex flex-col flex-1 gap-10">
