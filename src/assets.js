@@ -1,4 +1,5 @@
-import Individal from "./assets/carissa_branding.jpg";
+import Branding from "./assets/carissa_branding.jpg";
+import Individal from "./assets/individual.jpg";
 import Speaking from "./assets/speaking.jpg";
 import Affordable from "./assets/affordable.jpg";
 
@@ -51,7 +52,7 @@ export const sessionFormats = {
 export const sessionFormats_2 = [
   {
     title: "INDIVIDUAL SESSIONS (VIRTUAL)",
-    img: Speaking,
+    img: Individal,
     price: "$145",
     description:
       "You deserve a safe space to explore your identity and relationships, navigate life’s challenges, and experience growth and healing. ",
@@ -67,8 +68,8 @@ export const sessionFormats_2 = [
     topics: [],
   },
   {
-    title: "SPEAKING",
-    img: Individal,
+    title: "CORPORATE EVENT SPEAKING",
+    img: Branding,
     price: "",
     description:
       "I am passionate about increasing mental health awareness and making psychoeducation both informative and engaging. With experience in corporate wellness, I am available to speak with your team on a variety of topics, including: ",
@@ -165,7 +166,7 @@ export const experience = [
 export const certifications = [
   {
     year: "2021",
-    title: "AEDPAccelerated Experiential Dynamic Psychotherapy (AEDP) Level 1",
+    title: "Accelerated Experiential Dynamic Psychotherapy (AEDP) Level 1",
     location: "Mississauga, ON",
   },
   {
