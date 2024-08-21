@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import SubTitle from "./layouts/SubTitle.astro";
 import ListItem from "./layouts/ListItem.astro";
-const { title, img, price, description, topics } = Astro.props;
+const { title, img, prices, description, topics } = Astro.props;
 ---
 
 <div class="md:max-w-[75%] lg:max-w-[75%]">
@@ -22,14 +22,28 @@ const { title, img, price, description, topics } = Astro.props;
     </div>
 
     {
-      !price ? (
-        <p class="text-ng-primary-darker tracking-wide text-sm font-[400] ">
+      !prices ? (
+        <p class="text-ng-primary-darker tracking-wide text-sm font-[400] min-h-[50px]">
           Please contact me for more information.
         </p>
       ) : (
-        <p class="text-ng-primary-darker tracking-wide text-base font-[400]  ">
-          {price}
-        </p>
+        <div class="flex flex-col min-h-[50px]">
+          {prices.map((item) => {
+            return (
+              <div class="flex">
+                <p class="text-ng-primary-darker tracking-wide text-base font-[400] min-w-[40px]">
+                  {item.price}
+                </p>
+                <p class="text-ng-primary-darker tracking-wide text-base font-[400] min-w-[15px] text-center">
+                  |
+                </p>
+                <p class="text-ng-primary-darker tracking-wide text-base font-[400] min-w-[40px]">
+                  {item.time}
+                </p>
+              </div>
+            );
+          })}
+        </div>
       )
     }
     <p class="text-ng-text-content text-base font-[300] leading-2">

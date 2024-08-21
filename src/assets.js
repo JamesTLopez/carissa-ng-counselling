@@ -53,7 +53,10 @@ export const sessionFormats_2 = [
   {
     title: "INDIVIDUAL SESSIONS (VIRTUAL)",
     img: Individal,
-    price: "$145",
+    prices: [
+      { price: "$145", time: "50 min" },
+      { price: "$232", time: "80 min" },
+    ],
     description:
       "You deserve a safe space to explore your identity and relationships, navigate life’s challenges, and experience growth and healing. ",
     topics: [],
