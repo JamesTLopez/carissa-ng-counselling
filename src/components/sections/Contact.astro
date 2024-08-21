@@ -13,10 +13,29 @@ import SectionWrapper from "../layouts/SectionWrapper.astro";
         method="POST"
         class="flex flex-col gap-4"
       >
-        <input type="text" placeholder="First Name" class="border p-2" />
-        <input type="text" placeholder="Last Name" class="border p-2" />
-        <input type="email" placeholder="Email" class="border p-2" />
-        <textarea name="message" class="border p-2 min-h-[290px]"></textarea>
+        <input
+          type="text"
+          name="firstname"
+          placeholder="First Name *"
+          required
+          class="border p-2"
+        />
+        <input
+          type="text"
+          name="lastname"
+          required
+          placeholder="Last Name *"
+          class="border p-2"
+        />
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Email *"
+          class="border p-2"
+        />
+        <textarea name="message" class="border p-2 min-h-[290px]" required
+        ></textarea>
         <button
           type="submit"
           class="w-[170px] border py-4 px-6 font-[500] text-sm tracking-widest text-ng-primary border-ng-primary text-nowrap hover:bg-ng-primary mx-auto lg:mx-0 hover:text-white transition-colors"
