@@ -1,0 +1,37 @@
+---
+import SVGLoader from "../assets/SvgLoader.astro";
+---
+
+<script>
+  import "../scripts/header";
+</script>
+
+<header
+  class="sticky top-0 py-4 w-full bg-white bg-opacity-0 z-40 transition-all px-4"
+>
+  <div class="center-div w-full flex items-center gap-4">
+    <div class="flex items-center w-full gapy-6">
+      <div class="flex flex-1 items-center">
+        <a
+          href="/"
+          class="text-ng-primary max-w-[250px] min-w-[150px] aspect-auto w-full"
+        >
+          <SVGLoader icon="header-logo" />
+        </a>
+      </div>
+      <nav
+        class="flex-1 md:flex hidden items-center justify-center font-[400] mx-auto tracking-widest text-ng-primary"
+      >
+        <ul class="list-none md:flex hidden gap-6"></ul>
+      </nav>
+      <div class="flex-1 md:flex hidden justify-end"></div>
+      <div class="flex-1 md:hidden flex items-center justify-end"></div>
+    </div>
+  </div>
+</header>
+
+<style>
+  .show {
+    margin-left: 0vw;
+  }
+</style>
